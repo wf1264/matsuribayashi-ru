@@ -1,0 +1,195 @@
+void main()
+{
+	if(GetLocalFlag(FragmentRead51) == 1 )
+	{
+		CallScript("_kakera50_02");
+		SetLocalFlag( LFragmentLoop, 0 );
+		Return();
+	}
+
+	DrawScene( "black", 400 );
+
+	DrawScene( "white", 1000 );
+
+	PlayBGM( 0, "maturi_01_Ver2", 120, 0 );
+
+	DrawScene( "background/fure2", 400 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　７つのカケラを様々な奇跡で結び集め、",
+		   NULL,"Собрав чудеса из семи частей......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私はようやくこのカケラを手にする。",
+		   NULL," я наконец держу в руках этот фрагмент.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…このカケラの中に、私たちの最後の運命が詰まっている。",
+		   NULL,"Внутри него — наша окончательная судьба.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、……覗く前に、少しだけ待ってほしいの。",
+		   NULL,"Но...... перед тем как заглянуть, подожди немножко, прошу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この中にある運命は、私たちが覗けばそれで決まってしまう。",
+		   NULL,"Как только заглянем, судьба внутри сложится окончательно.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……猫を詰めた箱の話をしたことはあったっけ？",
+		   NULL,"......Я рассказывала тебе про кота в коробке?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　箱の中の猫は生きているか、死んでいるか。",
+		   NULL,"Жив или мёртв кот в коробке?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…開ければわかることだけど、開けるまではわからない。",
+		   NULL,"Откроешь — узнаешь, но не до тех пор, как откроешь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　生きているかもしれないし、死んでいるかもしれない。",
+		   NULL,"Может, он жив, может быть, мёртв.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、中身のわからない開ける前の箱の中には、",
+		   NULL,"Иначе говоря, внутри закрытой коробки, чьё содержимое ты не видишь...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……生きた猫と、死んだ猫が同時に存在しているということなの。",
+		   NULL," есть одновременно и мёртвый, и живой кот.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、開けて真実を知った瞬間に、ありえない方が消えてしまう。",
+		   NULL,"И при открытии, когда истина станет известна, неверный ответ исчезает.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…このカケラの中身も同じこと。",
+		   NULL,"Так же и с нашим фрагментом.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この中には、私たちの望む未来と、鷹野の望む未来が同時に存在している。",
+		   NULL,"В нём одновременно есть будущее, которого мы жаждем, и будущее идеала Такано.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それらは相反していて、互いの未来を否定し合っている。",
+		   NULL,"Они противоречат одно другому и являются взаимоисключающими.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　覗けば、片方の未来は、消えてしまう。",
+		   NULL,"Заглянешь — одно будущее исчезнет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もし、……私たちの駒がこれ以上なく充分に揃っているならば、",
+		   NULL,"Если... мы собрали действительно все фрагменты, которые только можно,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…私たちは覚悟を決めて、このカケラを覗いてみよう。",
+		   NULL," так соберёмся же с духом и посмотрим, что тут внутри.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…でも。",
+		   NULL,"...Но.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私たちはゲーム盤の上に、これまでと同じ駒しか、まだ並べていない。",
+		   NULL,"На игровой доске у нас лишь те же фигуры, что были доныне.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、その条件でのゲームもやはり、鷹野たちの圧勝だった。",
+		   NULL,"И в тех условиях игра заканчивалась сокрушительной победой Такано.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　すでに皆殺し編のカケラで試している。",
+		   NULL,"Мы уже пробовали во фрагменте «Главы о Массовой Казни».", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まだ、…駒がいるのだ。",
+		   NULL,"Нужна ещё хоть одна фигура.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　強い力を持ち、ルールＹを打ち砕いてくれる強さを持った駒の協力が。",
+		   NULL,"Могучая фигура, чьей мощи хватит, чтобы разбить Правило Игрек.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……その駒が得られるまで、",
+		   NULL,"......Пока она не попадёт к нам......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 750 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私は恐ろしくて、このカケラを覗くことができない…。",
+		   NULL," робость не даст мне заглянуть внутрь фрагмента...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、そんな駒をどうやって得るの？",
+		   NULL,"Но как её заполучить?", Line_WaitForInput);
+	OutputLine(NULL, "　今まで一度も得たことがないのに？",
+		   NULL," Она ведь ни разу не выступала за нас?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それを得るには、",
+		   NULL,"......Ради неё", Line_WaitForInput);
+	OutputLine(NULL, "もう一度だけ、",
+		   NULL," нужно", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "いる。",
+		   NULL," ещё одно.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　奇跡の力が、いる。",
+		   NULL,"Всего-то ещё одно чудо должно случиться.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

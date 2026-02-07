@@ -1,0 +1,611 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "background/rouka1", 400 );
+
+	PlayBGM( 0, "Iru", 120, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2005", 128, TRUE);
+	OutputLine(NULL, "「それじゃ、俺はそろそろお暇しますわ。",
+		   NULL,"\"Ну шо ж, пора мне.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2006", 128, TRUE);
+	OutputLine(NULL, "どうもご馳走様でした。」",
+		   NULL," Премного благодарствую за гостеприимство.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2001", 128, TRUE);
+	OutputLine(NULL, "「えぇんねえぇんね。",
+		   NULL,"\"Ничахо, ничахо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2002", 128, TRUE);
+	OutputLine(NULL, "また来たってぇな。」",
+		   NULL," Заходь ишшо, сделай милоссь.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacterWithFiltering(2, 3, "sprite/me1a_wink_a1_", "1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2001", 128, TRUE);
+	OutputLine(NULL, "「ただいまー！",
+		   NULL,"\"Я дома-а!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2002", 128, TRUE);
+	OutputLine(NULL, "　って、あれ、弘叔父さん。",
+		   NULL," Э, ну надо же, дядя Хироси.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2003", 128, TRUE);
+	OutputLine(NULL, "お久し振りですー！」",
+		   NULL," Давненько не заглядывали!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2007", 128, TRUE);
+	OutputLine(NULL, "「おう、魅音ちゃん。",
+		   NULL,"\"О, Мион-тян.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2008", 128, TRUE);
+	OutputLine(NULL, "今、帰りかい。",
+		   NULL," Только домой пришла?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2009", 128, TRUE);
+	OutputLine(NULL, "叔父さんは今から送迎だよ。」",
+		   NULL," Я уж покупателей отвозить ухожу.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(2, 3, "sprite/me1a_def_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2004", 128, TRUE);
+	OutputLine(NULL, "「送迎？",
+		   NULL,"\"Покупателей?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2005", 128, TRUE);
+	OutputLine(NULL, "　あぁ、不動産屋さんのお仕事？」",
+		   NULL," А, ты про свои дела с недвижимостью?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "background/so1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎家は雛見沢屈指の大地主だ。",
+		   NULL,"Семья Сонодзаки — едва ли не крупнейшие землевладельцы в Хинамидзаве.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっともこんな田舎の余った土地だから、荒れるに任せているだけで有効利用しているわけじゃない。",
+		   NULL,"Только из-за расположения земель в сельской глуши, а также из-за нехватки рук для их обработки, они, брошенные, заросли сорной травой.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな村内の園崎家地所を、最近は分譲地として売りに出していた。",
+		   NULL,"Недавно наша семья участками выставила их на продажу.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ご先祖様から受け継いだ土地を余所者に切り売りしていいのかという批判も、一応、親族会議では出たが、婆っちゃが、しゃあらしいわぁ！",
+		   NULL,"На семейном собрании пробовали возражать, мол, хорошо ли продавать чужакам земли, доставшиеся от предков, но бабуля КАААК рявкнет: «ЦЫЦ!»", Line_WaitForInput);
+	OutputLine(NULL, "　と一喝してそれにて決着。",
+		   NULL," — на том спор и кончился.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　休耕地のいくつかが更地にされて、分譲地として解放されることになったのだ。",
+		   NULL,"Кое-какие неиспользуемые поля разбили на участки под продажу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…これに関しては、私も疑問があった。",
+		   NULL,"Тут и у меня возникли вопросы.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だって、園崎家は大金持ちだ。",
+		   NULL,"Семья Сонодзаки ж богата.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　土地も余ってるがお金だって余ってる。",
+		   NULL,"Земель полно, полно и денег.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　わざわざ土地を切り売りしなければならない理由がない。",
+		   NULL,"Нет никакой надобности продавать землю.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや、それどころか、先祖の土地を余所者に売るなんて話、婆っちゃが言い出すなんて。",
+		   NULL,"Хотя чего уж там — только представить, что продать земли предков чужакам предложила бабуля.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それどころかむしろ、血管を浮かせるほどに怒鳴って反対しそうなのに。",
+		   NULL,"Она скорее наорала бы на дерзнувшего брякнуть подобное, аж вены бы на лбу вздулись.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "background/so_g1", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2010", 128, TRUE);
+	OutputLine(NULL, "「じゃあね、駅前に寄った時はぜひ遊びにおいでよ。",
+		   NULL,"\"Ладно, заходи в гости, как случится проезжать у вокзала.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2011", 128, TRUE);
+	OutputLine(NULL, "麦茶くらいご馳走するから。」",
+		   NULL," Уж чайку-то ячменного сыщу, чтоб попотчевать.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2006", 128, TRUE);
+	OutputLine(NULL, "「はい、ありがとうございます。",
+		   NULL,"\"Хорошо, большое спасибо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2007", 128, TRUE);
+	OutputLine(NULL, "お仕事はどんな感じですか？」",
+		   NULL," А как ваши дела продвигаются?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2012", 128, TRUE);
+	OutputLine(NULL, "「都会の人が案外、興味を持ってくれたからびっくりだわ！",
+		   NULL,"\"Сам диву даюсь, сколько среди городских охотников до наших мест!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2013", 128, TRUE);
+	OutputLine(NULL, "　便利な都会に住みながら、わざわざこんな田舎に別荘が持ちたい小金持ちばっかりだね。」",
+		   NULL," Сплошь богатенькие — мало им городских удобств, ты им загородный дом в нашей глуши подавай.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2008", 128, TRUE);
+	OutputLine(NULL, "「やれやれ、物好きなことで！」",
+		   NULL,"\"Охо-хо, любопытные!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2014", 128, TRUE);
+	OutputLine(NULL, "「一軒、別荘じゃなくて、引越しで検討されてるお宅があったね。",
+		   NULL,"\"Один даже хочет не просто загородный дом, а переехать сюда.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2015", 128, TRUE);
+	OutputLine(NULL, "アトリエが持ちたいとか言ってたから、画家さんとかかねぇ？」",
+		   NULL," Говорил, художественную мастерскую хочет построить, — картины рисует, видать?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2009", 128, TRUE);
+	OutputLine(NULL, "「へー！",
+		   NULL,"\"О-о-о!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2010", 128, TRUE);
+	OutputLine(NULL, "　そりゃすごいや！」",
+		   NULL," Круто!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不動産屋</color>", NULL, "<color=#f5e6d3>Агент по недвижимости</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2016", 128, TRUE);
+	OutputLine(NULL, "「おっと、いけねぇわ！",
+		   NULL,"\"Ох, чёрт!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_hudou2017", 128, TRUE);
+	OutputLine(NULL, "　じゃ、叔父さんはバスに戻るわ！」",
+		   NULL," Так, я к автобусу побежал!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　分譲地の見学ツアーを企画したらしく、それの送迎バスの運転をしてきた、ということらしい。",
+		   NULL,"Похоже, он организовал ознакомительную поездку по участкам, а сам управляет автобусом.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そろそろ見学や説明が終わる頃合なのだろう。",
+		   NULL,"Видно, подходит время везти покупателей обратно.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　叔父さんは松の枝をくぐって、ぱたぱたと駆けて行った。",
+		   NULL,"Дядя, пригибаясь, чтобы не задеть нижние ветви сосен, побежал к воротам.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "background/sora5", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2011", 128, TRUE);
+	OutputLine(NULL, "「…ねぇ、聞いていい？",
+		   NULL,"\"...Слушай, а можно спросить?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2012", 128, TRUE);
+	OutputLine(NULL, "　余所者嫌いの婆っちゃがさ、どうしてわざわざ分譲地なんかにしたの？」",
+		   NULL," Ты ж не любишь чужих, бабуля, почему ты поделила землю?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2003", 128, TRUE);
+	OutputLine(NULL, "「私ゃあ余所者なんか嫌いだし都会者も大嫌いだ。",
+		   NULL,"\"Я не люблю чужаков, а горожан так особливо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2004", 128, TRUE);
+	OutputLine(NULL, "……だが、村にゃ必要なんよ。",
+		   NULL," ......Но у них нуждаесся деревня.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2005", 128, TRUE);
+	OutputLine(NULL, "空気の入れ替えみたいなもんさな。」",
+		   NULL," Они як свежий воздух.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2013", 128, TRUE);
+	OutputLine(NULL, "「外の人が来ることで、…何か村にいい影響があるということ？」",
+		   NULL,"\"То есть народ извне... как-нибудь хорошо повлияет на деревню?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2006", 128, TRUE);
+	OutputLine(NULL, "「ここはいい村だぁね。",
+		   NULL,"\"Дяревня у нас хорошая......", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2007", 128, TRUE);
+	OutputLine(NULL, "……今は忙しい世の中だから、一日たりともそったぁしといとくらんがな。",
+		   NULL," Нонче жизнь быстрая, за день мнохое поменятися можеть.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2008", 128, TRUE);
+	OutputLine(NULL, "昔だったら、十年二十年住んでてもなぁんにも変わらん、変化のない静かな村だったんよ。」",
+		   NULL," Ране-то шо десяток, шо двас-сть лет ничахо не менялось — усё та же тиха деревня.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2014", 128, TRUE);
+	OutputLine(NULL, "「まぁ、それが田舎ってもんだしねぇ。",
+		   NULL,"\"Ну, такая вот жизнь в селе.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2015", 128, TRUE);
+	OutputLine(NULL, "この村じゃ、昨日と今日と明日に、何の違いもない。",
+		   NULL," Здесь нету разницы между вчера, сегодня и завтра.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2016", 128, TRUE);
+	OutputLine(NULL, "……私ゃ退屈だけどねぇ！」",
+		   NULL," ......По мне, так тоска зелёная!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2009", 128, TRUE);
+	OutputLine(NULL, "「でも、友達ができたろ。",
+		   NULL,"\"Но ты ж завела подруху, да?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2010", 128, TRUE);
+	OutputLine(NULL, "外から竜宮のレナちゃんが引っ越してきて友達になってくれたんだろが。",
+		   NULL," Приихала к нам Рэна-тян из Рюгу и подружилася з тобой.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2011", 128, TRUE);
+	OutputLine(NULL, "近い歳の友達ができて嬉しい、言うとったがな。」",
+		   NULL," Сама ж грила, як рада-то заиметь друха свово возраста.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2017", 128, TRUE);
+	OutputLine(NULL, "「うん。",
+		   NULL,"\"Угу.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2018", 128, TRUE);
+	OutputLine(NULL, "予期せぬ友達が突然できるのは楽しいね。」",
+		   NULL," Весело вдруг взять и завести друга.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2012", 128, TRUE);
+	OutputLine(NULL, "「レナちゃんが来んとな、魅音、学校が退屈だぁ退屈だぁ言うとったんね。",
+		   NULL,"\"А без Рэны-тян ты усё ныла, шо «скукотишшша» у школе смертная, «скукотииишша».", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2013", 128, TRUE);
+	OutputLine(NULL, "よぅお、覚えとる。",
+		   NULL," Пооомню, помню я.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2014", 128, TRUE);
+	OutputLine(NULL, "くっくっくっく！」",
+		   NULL," Хы-хы-хы-хы!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2019", 128, TRUE);
+	OutputLine(NULL, "「それが、外から引っ越してくることによる効果だって言いたいわけ？」",
+		   NULL,"\"Говоришь, вот тебе и польза от приезжих?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2015", 128, TRUE);
+	OutputLine(NULL, "「…どんな寒い冬場にかて、たまには換気をせんとな、囲炉裏の悪い空気が溜まって窒息しちまうん。",
+		   NULL,"\"...У саму студёну зиму надоть порой проветрить, не то дурной воздух з очага застоится и дышать станеть нечем.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2016", 128, TRUE);
+	OutputLine(NULL, "寒くてしんどいのは承知で、窓をがらりと開けることもあるんよ。」",
+		   NULL," Зная про стужу наруже, ты распахивашь настежь окна.\"", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "maskdown", 1, 0, 300 );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 3, "sprite/me1a_def_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/rouka1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2020", 128, TRUE);
+	OutputLine(NULL, "「……外から人を迎えることが、村の換気になる？」",
+		   NULL,"\"......Приезд нового человека проветрит деревню?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2017", 128, TRUE);
+	OutputLine(NULL, "「あぁ、なるん。",
+		   NULL,"\"Ага, проветрить.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2018", 128, TRUE);
+	OutputLine(NULL, "そして綺麗な空気を入れて、私らみたいな悪い空気はとっとと追い出されるべきなんよ。」",
+		   NULL," И он должон принести свежий воздух, а нас, дурной, выгнать прочь.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条家のことを一言でも出せば、婆っちゃは烈火のように怒り出してしまうから言えないが。",
+		   NULL,"Заикнись про семью Ходзё, и бабуля вскипит, поэтому я промолчала, но...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……多分、婆っちゃは北条家に対する、いつまでも消えない村八分の気風とか、そういうのを全部総括して言ってると思う。",
+		   NULL,"...По-моему, бабушка имеет в виду непрекращающееся презрение к семье Ходзё — всё в этом духе.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条家と大喧嘩をした説明会の時のことを思い出すと、今でも腸が煮えくりかえるが、",
+		   NULL,"Даже сейчас, только вспомнит про то собрание, где поругалась с Ходзё, она свирепеет...", Line_WaitForInput);
+	OutputLine(NULL, "……それでも、そろそろ鞘に収めた方がいいと思っているのだろう。",
+		   NULL," но, видно, про себя думает, что пора бы уже вложить меч в ножны.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっとも、安易に許すとは言えない難しいお年頃だ。",
+		   NULL,"Правда, возраст не даст ей взять и простить их.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　対外的にはもう勘弁してやるとは言えない。",
+		   NULL,"Ей не сказать перед всеми: так и так, мол, прощаю.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…………本当は嫌いじゃないくせに、面と向うと邪険にしてしまう、小学生女子なみの感情表現のような気がする。",
+		   NULL,".........Напоминает какую-то школьницу из начальных классов, которая с виду терпеть не может мальчишку, хотя на деле тот ей нравится.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…人って、歳を取ると、どうやら一周回ってきて、子供に戻るんじゃないだろうか。",
+		   NULL,"Должно быть, со старостью человек снова делается ребёнком.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは婆っちゃだけじゃない。",
+		   NULL,"Так оно не только с бабулей.", Line_WaitForInput);
+	OutputLine(NULL, "村のお年寄りたち全体。",
+		   NULL," Со всеми деревенскими стариками так.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……いや、村に染み付いた悪弊と言うべきか。",
+		   NULL,"......Нет, наверное, правильнее сказать: с дурными обычаями, укоренившимися в деревне.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは多分、婆っちゃの例えた、澱んだ悪い空気とそっくりなものだ。",
+		   NULL,"Видать, вот что бабуля метко сравнила с застоявшимся дурным воздухом.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　締め切った室内でいくらばたばたと扇いだって、何の意味もない。",
+		   NULL,"Сколько ни хлопай веером в закрытой комнате, проку от него нет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　窓を開けて、新鮮な空気をたっぷり入れなきゃ、室内の空気は澄まないのだから。",
+		   NULL,"Только распахнуть окна, впустить свежий воздух с улицы — иначе воздух в комнате не очистить.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/sora5", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2021", 128, TRUE);
+	OutputLine(NULL, "「実際に引っ越してくる人があるかはわからないけど。",
+		   NULL,"\"Ещё неизвестно, переедет ли сюда кто-то,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2022", 128, TRUE);
+	OutputLine(NULL, "その人にそこまでを期待しちゃうのは気の毒じゃない？",
+		   NULL," а ты уж столько ждёшь от него. Ну не печально ли?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2023", 128, TRUE);
+	OutputLine(NULL, "　くっくっく！」",
+		   NULL," Хы-хы-хы!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2019", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「レナちゃんが１人転校してきても魅音は変わるんね。",
+		   NULL,"\"Переезда одной Рэны-тян хватило, шоб ты поменялась.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2020", 128, TRUE);
+	OutputLine(NULL, "誰が引っ越してきても、きっと村は変わる。",
+		   NULL," Хто б сюды ни приехал, деревня изменитси.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2021", 128, TRUE);
+	OutputLine(NULL, "……願わくば、それが元気な若者で、わしら年寄り連中が安心して村を任せられるくらい、大暴れしてくれよると嬉しいんだが。",
+		   NULL," ......Надеюся, приедеть полная жизни молодёжь и устроить славную бучу — таку, шобы мы, старики, знали: у их руках дяревня не пропадёть.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2022", 128, TRUE);
+	OutputLine(NULL, "それこそ年寄り連中が、もうやっとられんね、あの世に退散するわー言うくらいにな。」",
+		   NULL," Таку, шобы нас на сём свете уже нишо не держало.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2024", 128, TRUE);
+	OutputLine(NULL, "「くっくっく…、何それ。",
+		   NULL,"\"Хы-хы-хы... ты эт чё,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2025", 128, TRUE);
+	OutputLine(NULL, "死んだおじいちゃんの話？」",
+		   NULL," опять про дедушку?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2023", 128, TRUE);
+	OutputLine(NULL, "「あほんたれ、誰が爺さまの話をしたんよ…！！",
+		   NULL,"\"Балда, ты хоть одно слово про деда слыхала?!...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2024", 128, TRUE);
+	OutputLine(NULL, "　ほれ、お手伝いさん言って、縁側のお茶を片付けさせてくれな。」",
+		   NULL," Ну-кась, сходи позови домработницу, пущай приберёть на веранде опосля чаю.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2026", 128, TRUE);
+	OutputLine(NULL, "「へいへい。",
+		   NULL,"\"Ладно-ладно.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2027", 128, TRUE);
+	OutputLine(NULL, "了解了解。」",
+		   NULL," Слушаюсь и повинуюсь.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	DrawScene( "background/rouka1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2025", 128, TRUE);
+	OutputLine(NULL, "「……………魅音。」",
+		   NULL,"\"...............Мион.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2028", 128, TRUE);
+	OutputLine(NULL, "「ん？」",
+		   NULL,"\"Хм?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2026", 128, TRUE);
+	OutputLine(NULL, "「…………北条悟史が消えた日。",
+		   NULL,"\".........У день пропажи Ходзё Сатоши", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2027", 128, TRUE);
+	OutputLine(NULL, "…お前、私に詰め寄ったろが。」",
+		   NULL," ты устроила мене допрос.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2029", 128, TRUE);
+	OutputLine(NULL, "「…あぁ、そんなこともしたね。",
+		   NULL,"\"...А-а, ну да, было дело...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2030", 128, TRUE);
+	OutputLine(NULL, "…あはは。」",
+		   NULL," Аха-ха.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2028", 128, TRUE);
+	OutputLine(NULL, "「私ゃな。",
+		   NULL,"\"Знаешь...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2029", 128, TRUE);
+	OutputLine(NULL, "…あれで目が覚めたんよ。",
+		   NULL," Ты мне глаза раскрыла.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2030", 128, TRUE);
+	OutputLine(NULL, "……北条家がどうのこうの言う問題は、年寄り連中が死ねば時間が解決してくれるなんてんじゃあかんね。",
+		   NULL," ......Нельзя ждать, покуда время спровадить нас, пожилой люд, у мохилу, решив энто дело с Ходзё.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2031", 128, TRUE);
+	OutputLine(NULL, "……そんなの待たず、早ぅ解決せんとなあかん。」",
+		   NULL," ......Не ждать надоть, а торопить, шоб развязка пришла поскорее.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2031", 128, TRUE);
+	OutputLine(NULL, "「でも、自分にはそれができないから。",
+		   NULL,"\"Но сама ты не можешь", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032", 128, TRUE);
+	OutputLine(NULL, "…余所者にそれを託す？」",
+		   NULL," и поэтому доверяешь работу приезжим?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2032", 128, TRUE);
+	OutputLine(NULL, "「………それが、私にできる精一杯だんね。」",
+		   NULL,"\".........Большего я не могу.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032a", 128, TRUE);
+	OutputLine(NULL, "「どんな悪い手札だって、次のドローで良い札が入れば、流れが変わるきっかけになることもある。",
+		   NULL,"\"Сколь бы плохой набор ни попался, следующая взятая карта при удаче может изменить ход игры.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2032b", 128, TRUE);
+	OutputLine(NULL, "………それに期待して山から札を引くのも、ありかもしれない。」",
+		   NULL," .........Как знать, авось и получится что, коль надеяться да тянуть из колоды дальше.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2035", 128, TRUE);
+	OutputLine(NULL, "「新しい風は、魅音、お前らの世代になる。……外の風を迎え入れたれな。",
+		   NULL,"\"Новый ветер, Мион, будеть из вашего поколения. ......Прими ветер извне у нашу деревню.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2036", 128, TRUE);
+	OutputLine(NULL, "…そして、お前は内からの風となって、交じり合いながら村の澱みを吹き飛ばしてくれ。」",
+		   NULL," И стань внутренним ветром, шо вместе з ним сдует затхлый деревенский воздух за горизонт.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2033", 128, TRUE);
+	OutputLine(NULL, "「他力本願の極みだね。",
+		   NULL,"\"Надеемся на других, да?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2034", 128, TRUE);
+	OutputLine(NULL, "自分が火種を作ったくせに、孫にその尻拭いをさせるとは。」",
+		   NULL," Сама зажгла огонь, а внучка пусть задувает.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2037", 128, TRUE);
+	OutputLine(NULL, "「……そう言うなや。",
+		   NULL,"\"......Та брось ты это.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2038", 128, TRUE);
+	OutputLine(NULL, "新しい風を、",
+		   NULL," Прими новый ветер в деревню,", Line_Continue);
+	OutputLine(NULL, "…新しい園崎家の頭首として、村に招き入れたれ。」",
+		   NULL," як нова хлава рода Сонодзаки.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/vtk2_mion2035", 128, TRUE);
+	OutputLine(NULL, "「…それが、次期頭首の仕事だってんなら。」",
+		   NULL,"\"...Ну, если уж то мой долг наследницы рода...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Орё</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2039", 128, TRUE);
+	OutputLine(NULL, "「………頼むわ。",
+		   NULL,"\".........Будь ласка.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2040", 128, TRUE);
+	OutputLine(NULL, "魅音。",
+		   NULL," Мион,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2041", 128, TRUE);
+	OutputLine(NULL, "私ゃあ老いたんね。",
+		   NULL," я стара.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/vtk2_oryou2042", 128, TRUE);
+	OutputLine(NULL, "もう憎まれ役しかでけん。」",
+		   NULL," Одно мне осталось — быть ненавистной каргой.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　風鈴がチリンと、弱々しく鳴った。",
+		   NULL,"Колокольчик-подвеска слабо позвякивал.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは涼風がこれから吹くことを知らせる先触れだったに違いない…。",
+		   NULL,"Должно быть, он знаменовал идущую к нам свежую бурю...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,523 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "as_time_goes_by", 120, 0 );
+
+	DrawScene( "background/fure1", 1000 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……………これで、集められる駒は全て昭和５８年に並んだのかしら。",
+		   NULL,"............Все ли доступные мне фигуры теперь выстроены, готовые к 58-му году Сёва?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５８年６月に駒を並べるだけでも、…私たちには長い旅で、本当に疲れることね。",
+		   NULL,"Всего лишь выстраивая фигуры в подготовке к июню 58-го, мы прошли долгий, утомительный путь.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、これでようやくスタートライン。",
+		   NULL,"Но вот наконец и линия старта.", Line_WaitForInput);
+	OutputLine(NULL, "ここからようやくゼロが始まる。",
+		   NULL," Отсюда мы начинаем с нуля.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……しかし、…こうして色々なカケラを見てみると。",
+		   NULL,"......Всё же... рассмотрев столько разных фрагментов...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５８年６月に、どれほどの思いがたくさん集まっていたのかがわかる。",
+		   NULL,"Понимаешь, сколько помыслов собралось в июне 58-го года Сёва.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　かつての私は、自分に関係のない人間の思いなど何の役にも立たないと言っていたけど。",
+		   NULL,"Прежде я говорила, что помыслы не относящихся ко мне людей бесполезны.", Line_WaitForInput);
+	OutputLine(NULL, "…それはとんでもないこと。",
+		   NULL," И несла полную чушь.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手梨花は、……昭和５８年６月の運命を乗り越えるために、自分にできる全ての努力をする。",
+		   NULL,"Фурудэ Рика...... делает всё посильное, чтобы побороть судьбу июня 58-го.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女がした努力は２つ。",
+		   NULL,"Она сделала две вещи.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/sinryou_soto1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　１つは、自分の身に降りかかる災厄から一番身を守ってくれるに違いない入江機関への接触。",
+		   NULL,"Во-первых, связалась с Институтом Ириэ, уверенная, что тот лучше всех убережёт её от беды.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…皮肉にも、その入江機関の鷹野が私の命を狙うのだけど、",
+		   NULL,"...Что забавно, Такано из этого самого Института хочет меня убить,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…この時点の梨花にとって、それは最善の行動。",
+		   NULL," но на данном этапе Рика не знала лучшего хода.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そしてもう１つは、…前原圭一の一家、前原家が雛見沢へ転校してくるようにしたこと。",
+		   NULL,"Во-вторых, поспособствовала переезду семьи Маэбары Кейти в Хинамидзаву.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　実は、前原家が雛見沢へ転校してくるのは絶対じゃない。",
+		   NULL,"По правде говоря, переезд семьи Маэбара в деревню не безусловен.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DrawSceneWithMask( "background/susuki", "maskc", 1, 0, 1300 );
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……あの、分譲地の下見の日に、私たちと出会い、何かの感慨に浸って初めて引越しを決意するの。",
+		   NULL,"......Только в день осмотра участков, после глубоко его тронувшей встречи с нами, отец семейства принимает окончательное решение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、あの野原で私たちが遊ぶのは必然で、前原家引越しのための重要な鍵。",
+		   NULL,"Следовательно, наша игра на том лугу — необходимость и важный ключ к переезду семьи Маэбара.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それを見つけるのにどれだけ長い時間を掛けたことか。",
+		   NULL,"Сколько же времени ушло на то, чтобы понять?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　様々な条件のオンとオフを繰り返し、あの野原で圭一の父に出会うことが鍵なんだと、ようやく突き止めた。",
+		   NULL,"Включая и выключая различные условия, наконец я сообразила, что ключ — встреча на том лугу с отцом Кейти.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前原圭一は、…私を縛る鎖のひとつ、ルールＺを打ち破る重要な鍵。",
+		   NULL,"Маэбара Кейти — важнейший ключ, сокрушающий одну из обмотавших меня цепей, Правило Зет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この村で何が起こっても、全て曲解して解釈してしまう古きしきたりや悪弊を打ち破る力を持つ、新しく清らかで力強い風。",
+		   NULL,"Свежий, чистый и сильный ветер, способный разбить старые порядки со скверной, из-за которых всё, что ни происходит в нашей деревне, получает искажённое толкование.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな彼が色々なきっかけを作り出し、……強固な運命に立ち向かうには、強固な意志と、信じる気持ちが大切なんだという、大切な鍵を私に託してくれる。",
+		   NULL,"Он создал много возможностей... и предоставил мне весомый ключ — понимание, что против сильной судьбы нужны сильная воля и сила верить.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…でも、そんな彼を欲したのは私だけじゃない。",
+		   NULL,"...Но его появления жаждала не только я.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/hi1", "maskup", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　村の悪弊を払拭したかった園崎家の人間たちも望んでいたこと。",
+		   NULL,"На него надеялись люди семьи Сонодзаки, хотевшие разбить деревенский порок.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　園崎魅音は、北条家や沙都子、悟史への理不尽な村八分に心を痛め、せめて自分だけは２人を守ってやろうと誓った。",
+		   NULL,"Сонодзаки Мион, недовольная безрассудными нападками на семью Ходзё, Сатоко и Сатоши, поклялась защищать их, пускай только своими силами.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、北条悟史が消えた夜、園崎お魎に怒りを爆発させ、その強い思いを伝えた。",
+		   NULL,"И в вечер исчезновения Ходзё Сатоши сорвалась на Сонодзаки Орё, озвучив ей своё решительное намерение.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	DrawScene( "background/so1", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その思いは、…園崎お魎に伝わる。",
+		   NULL,"До Сонодзаки Орё... дошло.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お魎だって薄々とは村の悪弊に気付いていて、それを何とかしたいと願っていた。",
+		   NULL,"Та сама замечала, что вещи в деревне творятся неправильные, и хотела поделать что-нибудь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、自分にはその力がないことを悔やみ、",
+		   NULL,"Но, досадуя на своё бессилие поделать что-то...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……外からの新風に託したのだ。",
+		   NULL," доверила задачу свежему ветру извне.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、前原家が引っ越して来れる土地が、売りに出される。",
+		   NULL,"И отдала на распродажу землю, куда впоследствии переедет семья Маэбара.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が野原で踊ろうとも、お魎が分譲地を売りに出さなかったら、圭一は来られないのだ。",
+		   NULL,"Я могла сколько угодно танцевать на лугу, но если бы Орё не выставила землю на распродажу, то Кейти не смог бы приехать.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModSetLayerFilter(0, 256, "none");
+	ModDrawCharacterWithFiltering(0, 2, "sprite/re1a_def_a1_", "2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、前原圭一に重要なきっかけをいくつも与える竜宮レナは、",
+		   NULL,"Потом, Рюгу Рэна, открывающая Маэбаре Кейти несколько серьёзных возможностей,", Line_WaitForInput);
+	OutputLine(NULL, "両親の離婚で深く傷つき、末期発症を一度は迎えながらも、雛見沢に帰ってくることで救われる。",
+		   NULL," спаслась возвращением в Хинамидзаву, несмотря на то, что, глубоко раненная разводом родителей, дошла было до последней стадии.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　引越し前の地でのことを、リセットして再びやり直したいという前原圭一の願いは、一年前に、竜宮レナも願っていたのだ。",
+		   NULL,"Желание Маэбары Кейти вычеркнуть случившееся в предыдущих местах проживания повторяло желание Рюгу Рэны за год до того.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなレナだから、…圭一のことを理解できたのではないかと思う。",
+		   NULL,"Думаю, потому-то Рэна смогла понять Кейти.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure1", 400 );
+//	DrawFragment("minacubemap", "FragmentDiamondNarrow", 400);
+	DrawScene( "background/kakera", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、あるカケラにおいて、…別のカケラのことを認識させるという奇跡を生み出す。",
+		   NULL,"Так сотворилось чудо, позволившее им в определённых фрагментах осознать события из других.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………別のカケラで学んだことを活かせるなら、人は間違いなど犯さない。",
+		   NULL,".........С умом воспользовавшись уроком, полученным в ином фрагменте, человек не ошибётся.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　駒は最善の動きを見せ、昭和５８年６月というゲームに勝てる可能性を飛躍的に高めるだろう。",
+		   NULL,"Игровые фигуры покажут лучшие ходы, и вероятность победить в игре за июнь 58-го года Сёва резко повысится.", Line_Normal);
+	ClearMessage();
+
+	StopFragment(400);
+	DrawScene( "black", 400 );
+	DrawScene( "background/fure2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり竜宮レナは自覚せずして、このゲーム盤の駒の中で重要な働きをするのだ。",
+		   NULL,"Иными словами, Рюгу Рэна, сама того не осознавая, играет среди фигур на доске большую роль.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条兄妹を巡る強固なルールＺは、そんな彼らの活躍で、やがて痛快に破られるのだ。",
+		   NULL,"Благодаря их действиям неколебимое Правило Зет, окружающее детей Ходзё, в конце концов разлетается вдребезги, к нашему торжеству.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(0, 4, "sprite/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろん、内側からの沙都子の克己も大きな力となる。",
+		   NULL,"Разумеется, здесь очень помогла и воля Сатоко.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　双方が手を伸ばしあったからこそ、互いの手が届いたのだから。",
+		   NULL,"Лишь потому, что руки протянули с обеих сторон, они встретились.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 2, "sprite/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacter(1, 1, "sprite/kei1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/fure1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そしてそれを教えてくれたのは圭一とレナ。",
+		   NULL,"А научили меня Кейти с Рэной.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼らが引っ越してこれるようにし、村に馴染めるようにした魅音。",
+		   NULL,"А Мион сделала возможным их переезд и помогла обжиться в деревне.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/fure2", "maskleft", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それだけじゃない。",
+		   NULL,"Ещё не всё.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(0, 10, "sprite/iri2_def2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+
+	OutputLine(NULL, "入江だって大きな思いと働きのある重要な駒だ。",
+		   NULL," Ириэ также весомая фигура со значительными стремлениями, ролью.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子を同情する彼は、雛見沢症候群というこのゲーム盤の中でもっとも大きな影響力を持つ、ルールＸを打ち破ることができる最大の存在だ。",
+		   NULL,"Он, сочувствующий Сатоко, располагает наибольшим влиянием на игровой доске под названием «Хинамидзавский синдром» и является главным, кто способен разбить Правило Икс.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　圭一やレナの決意や覚醒は、ルールＸに抗うことができることを教えただけで、打ち破ったわけではない。",
+		   NULL,"Целеустремлённость и пробуждение Кейти да Рэны только научили нас, что с Правилом Икс можно бороться, но не победили его.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　真の意味で打ち破るには、雛見沢症候群の治療に強い決意を持つ入江の存在も欠かせないのだ。",
+		   NULL,"Чтобы по-настоящему его победить, необходим Ириэ, твёрдо настроенный вылечить Хинамидзавский синдром.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　入江にも、これほどの色々な思いがあるなんて、知らなかった。",
+		   NULL,"Я и не знала, что в Ириэ столько стремлений.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どこかぼんやりした人間くらいにしか思わなかったが、",
+		   NULL,"Считала его каким-то рассеянным учёным, и только......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……これほどに重要な力を持っている駒だったのだ。",
+		   NULL," а он, оказывается, скрывал в себе настолько значительную мощь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これらの力を結集したら、……鷹野の思いに勝てるだろうか。",
+		   NULL,"Вместе с ними со всеми... получится ли одолеть волю Такано?", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure2", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……鷹野の思いも見てきた。",
+		   NULL,"......Видела я и помыслы Такано.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは悲しいくらいに強固で、…打ち破るのは容易じゃない。",
+		   NULL,"Они сильны до печального, и нелегко сокрушить их.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いくら戦おうとも、昭和５８年６月の運命が容易には揺るがないのは当り前。",
+		   NULL,"Сколько бы мы ни дрались, ясное дело, что судьба июня 58-го не пошатнётся так сразу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が募らせてきた思いなど、足元にも及ばないほど、たくさんの思いを持っていたのだから。",
+		   NULL,"Ведь у неё столько помыслов, что все собранные мной в подмётки тем не годятся.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……戦うことを諦め、惰性に生きてきた私と、常に人生を賭けて戦いを挑んできた彼女とでは、駒の重みが違う。",
+		   NULL,"......Вес фигур меня, отказавшейся от борьбы и плывшей по течению, и её, постоянно боровшейся, поставив на кон свою жизнь, — две большие разницы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……不貞腐れて、ワインに酔い逃避する私の駒がいかに軽かったことか。",
+		   NULL,"......Сколь слаба была я, мрачно напивавшаяся в надежде сбежать от действительности?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…………これだけでは、…まだ鷹野に勝てない。",
+		   NULL,".........С такой малостью... о победе над Такано мечтать рано.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　勝つためには、まだまだ駒を集めなければならない。",
+		   NULL,"Для победы нужно собрать больше фигур.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　警察の大石が、心強い味方になってくれる可能性を示してくれたこともあった。",
+		   NULL,"Ооиси, полицейский, показал, что может стать надёжным союзником.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、大石には尊敬する友人の死が、園崎家によるものだという大きな誤解があって、それが解けない限り、味方とはなってくれないだろう。",
+		   NULL,"Однако же Ооиси ошибочно полагает гибель своего досточтимого друга делом семьи Сонодзаки, что вряд ли даст ему выступить на нашей стороне, пока недоразумение не разрешится.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私にはどうやればその誤解を解けるのかわからないけれど、",
+		   NULL,"Не знаю, как его разрешить......", Line_WaitForInput);
+	OutputLine(NULL, "………必ず解けると信じて、サイコロを振り続けるしかない。",
+		   NULL,"... но могу только верить и кидать кости дальше.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、……圭一やレナたちが運命を変えるきっかけとなってくれたように、",
+		   NULL,"И...... подобно тому, как из-за Кейти, Рэны и остальных стало возможным переменить судьбу...", Line_WaitForInput);
+	OutputLine(NULL, "…赤坂にもそんなきっかけを与える力があるのではないか。",
+		   NULL," нет ли той же силы у Акасаки?", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	DrawScene( "background/hi1", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　昭和５８年の呪いは、雛見沢の呪いにも通じる。",
+		   NULL,"Созданное человеком проклятие 58-го года Сёва — проклятие Хинамидзавы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……呪いは、内なる力だけでは解けない。",
+		   NULL,"......Проклятия не победить одной лишь внутренней силой.", Line_WaitForInput);
+	OutputLine(NULL, "外からの力も必要なのだ。",
+		   NULL," Нужна и внешняя.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　双方が手を伸ばさないと手が届かない、沙都子の時のように。",
+		   NULL,"Руки не дотянутся, если обе стороны не протянут их — как в случае Сатоко.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、赤坂が私たちのことを思い出して駆けつけてくれたことはない。",
+		   NULL,"Но Акасака ни разу ещё не приходил на помощь, вспомнив про нас.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……駆けつけてくれても、それはいつも手遅れになった後なのだ。",
+		   NULL,"......Или приходил, но всякий раз уже после того, как можно было что-то исправить.", Line_WaitForInput);
+	OutputLine(NULL, "…遅い。",
+		   NULL," Поздно.", Line_WaitForInput);
+	OutputLine(NULL, "あまりに遅い。",
+		   NULL," Чересчур поздно.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それでも信じてサイコロを振り続けたなら、……いつか赤坂という駒も、味方としてゲーム盤の上に現れてくれるのか。",
+		   NULL,"И всё ж таки, коли продолжу я кидать кубик, веря...... не появится ли когда-нибудь Акасака на игровой доске в качестве моего союзника?", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最後のルールＹは、鷹野を駒とする悪しき黒幕たち。",
+		   NULL,"Последнее правило, Игрек, — могущественные злоумышленники, в чьей игре Такано лишь пешка.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…それを打ち破るには強い強い駒がいる。",
+		   NULL,"Для победы над ними нужна сильная-пресильная фигура.", Line_WaitForInput);
+	OutputLine(NULL, "…それだけの力を持つ駒は、",
+		   NULL," А такой силой обладает...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…多分、東京の警視庁に勤める赤坂にしかないはず。",
+		   NULL," едва ли кто-то иной, как не Акасака, служащий в Токийском управлении полиции.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……まだまだ力を借りるべき駒があるのだ。",
+		   NULL,"......Есть ещё фигуры, которые надо собрать на своей стороне.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それらを全て集めなきゃ、……あの鷹野には、敵わない。",
+		   NULL,"Они нужны все...... не то с Такано нам не тягаться.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ゲーム盤の準備は整った。",
+		   NULL,"Игровое поле готово.", Line_WaitForInput);
+	OutputLine(NULL, "でも駒が足りない。",
+		   NULL," Но фигур не хватает.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…まだまだ、これからなんだ。",
+		   NULL,"...Всё ещё впереди.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

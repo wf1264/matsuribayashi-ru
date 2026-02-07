@@ -1,0 +1,338 @@
+void main()
+{
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene( "white", 1000 );
+	PlayBGM( 0, "Liberating", 120, 0 );
+	DrawScene( "background/fure1", 1000 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ようこそ。",
+		   NULL,"Добро пожаловать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『ひぐらしのなく頃に〜祭囃し編〜』の世界へ。",
+		   NULL,"В мир под названием «Когда плачут цикады — Глава о Подыгрывании Фестивалю».", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この世界では、あなたは羽入の視点から物語世界を再構築することができます。",
+		   NULL,"Здесь вы сможете воссоздать мир повести со стороны Ханю.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最大の目的は、あなたにとっての理想である「昭和５８年６月」を作り上げることです。",
+		   NULL,"Главная цель — создать идеальный для вас «июнь 58-го года Сёва».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その理想を実現するためには、様々なカケラを集めていく必要があります。",
+		   NULL,"Чтобы того добиться, понадобится собрать воедино различнейшие фрагменты.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただし、鷹野の理想もまた強固です。",
+		   NULL,"Впрочем, идеал Такано тоже силён.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それを覆すためには相当の苦労とカケラが必要となるでしょう。",
+		   NULL,"Чтобы его победить, придётся немало перетерпеть и собрать фрагментов.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　予め警告しますが、この作業は非常に緩慢かつ苦痛です。",
+		   NULL,"Предупреждаю заранее: работа очень нескорая, а заодно тягостная.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　羽入はこの作業を百年以上も行い、一度は挫けて運命に身を委ねてしまったのですから。",
+		   NULL,"Ханю выполняла её больше века и раз даже пала духом, доверив себя судьбе.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野の理想に打ち勝つのは容易なことではありません。",
+		   NULL,"Одолеть идеал Такано непросто.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この世界の試練は、あなたに羽入のそれに準じた苦痛を与えるでしょう。",
+		   NULL,"Этот мир заставит вас испытать мучения, сходные с мучениями Ханю.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたは無数のカケラによって何度も繰り返される世界に精神を磨り減らされ、かつて羽入が屈服したように、あなたも屈服することがありえます。",
+		   NULL,"Возможно, вы, из-за бесчисленных фрагментов потеряв счёт повторам, сдадитесь в изнеможении, как в своё время сдалась Ханю.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたが屈服を認める場合。",
+		   NULL,"Признав собственное бессилие,", Line_WaitForInput);
+	OutputLine(NULL, "あなたはいつでもこのゲームを終了することができます。",
+		   NULL," вы можете в любой миг завершить игру.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その場合、あなたとあなたの仲間たちの運命を巡る世界は「鬼隠し編」から「皆殺し編」までの世界で閉じられます。",
+		   NULL,"В таком случае мир, вертящийся вокруг вашей и ваших друзей судеб, завершит свой путь от «Главы о Похищенных Демонами» на «Главе о Массовой Казни».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたはこの世界のことを忘れ、本作品をアンインストールすることによって、この世界での「死」を迎えることができます。",
+		   NULL,"Забывши про этот мир и удалив данное приложение, вы сможете «умереть» здесь.", Line_WaitForInput);
+	OutputLine(NULL, "…やがて梨花がそうなるように。",
+		   NULL," Что рано или поздно случится с Рикой.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたの理想の「昭和５８年６月」は、この世界に散らばる５０個ものカケラを結び合わせることで組み立てていきます。",
+		   NULL,"Вам предстоит составить свой идеал «июня 58-го года Сёва» из пятидесяти разбросанных по этому миру фрагментов.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　カケラを結び合わせるには、それぞれのカケラに合ったカケラが必要です。",
+		   NULL,"Чтобы присоединить фрагменты, нужно, чтобы они подходили к уже имеющимся.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それが５０個もあるのですから、あなたはその膨大な量にきっと眩暈すら覚えるでしょう。",
+		   NULL,"......Так как их целых пять десятков, у вас, наверное, закружится голова.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ですが、この世界はそこまで無慈悲ではありません。",
+		   NULL,"Однако мир этот не настолько безжалостен.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたの苦痛をほんの少し和らげるため、ささやかな手助けが与えられます。",
+		   NULL,"Чтобы чуть-чуть облегчить вам страдания, без небольшой толики помощи вас не оставят.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたが、まだ結び合わせることができないカケラを選んでしまった時。",
+		   NULL,"Случись вам выбрать фрагмент, который пока не присоединить...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたの唯一の味方である彼女は、そのカケラに、まだ結ぶことができないことを示す印を付けてくれます。",
+		   NULL,"Она, единственный ваш союзник, пометит его, чтобы вы уже не ошиблись.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この印がある内は、そのカケラは結ぶことができないということです。",
+		   NULL,"Пока метка не пропадёт, вы не сможете присоединить фрагмент.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　他のカケラを探しに行くのが良いでしょう。",
+		   NULL,"Лучше уж отправиться поискать другие.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ですが、あなたが他のカケラを結び付けていく内に、さっきは結び合わせることができなかったカケラが、いつの間にか結び合わせることができるようになっていることがあります。",
+		   NULL,"Правда, в процессе складывания фрагментов для недоступного прежде может вдруг появиться подходящее место.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな時、彼女は、それを知らせる印を付けてくれます。",
+		   NULL,"В таком случае она проставит на нём соответствующую метку.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さっそくそのカケラを結び合わせてみましょう。",
+		   NULL,"Присоединяйте фрагмент, не теряя времени даром.", Line_WaitForInput);
+	OutputLine(NULL, "……そうすることで、また別のカケラが結べるようになるかも。",
+		   NULL," ......Так, может, появится место для ещё какого-нибудь.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうして、５０個もの膨大な数のカケラ全てを結び合わせ、１つのカケラにした時、",
+		   NULL,"И, когда вы соберёте все пятьдесят в единое целое,", Line_WaitForInput);
+	OutputLine(NULL, "…そこには理想の「昭和５８年６月」が生まれるでしょう。",
+		   NULL," у вас получится идеальный «июнь 58-го года Сёва».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その時こそ、私たちがもっとも欲する「祭囃し編」が始まるのです。",
+		   NULL,"Тогда и начнётся наша желанная «Глава о Подыгрывании Фестивалю».", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　一個一個のカケラを覗く前に、まずは５０個のカケラの様子をずらりと見てみた方がいいでしょう。",
+		   NULL,"Полагаю, лучше окинуть взглядом все пятьдесят фрагментов, перед тем как заглядывать в каждый.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ほとんどのカケラは、結び合わせるのに他のカケラを必要とするため、恐らく、あなたが満足に覗くことができるカケラは、ほんのいくつかです。",
+		   NULL,"Большинству для присоединения потребуются другие, поэтому тех, в которые можно без помех заглянуть, окажется, вероятно, лишь несколько штук.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まずはそのカケラを探してみましょう。",
+		   NULL,"Сначала давайте найдём их.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのカケラを結び合わせるための条件は、マウスポインタを合わせれば教えてもらえます。",
+		   NULL,"Условия, необходимые для присоединения фрагмента, вы узнаете, наведя на него указатель мыши.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ですので、まずは条件なしで覗くことができるカケラを探してみると良いでしょう。",
+		   NULL,"Так что для начала стоит поискать те, у которых условий нет.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……これは非常に長く険しい試練になります。",
+		   NULL,"......Испытание вам предстоит крайне длительное и суровое.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もう一度繰り返しますが、羽入は百年以上これに挑み、しかも一度は挫折しています。",
+		   NULL,"Повторюсь: Ханю проходила его более века, причём однажды не выдержала.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仲間たちが奇跡を信じるのと同じ気持ちを、もしもあなたも持っていてくれたなら。",
+		   NULL,"Если вы разделяете веру в чудеса, горящую в ваших друзьях...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　たとえ、羽入の住まう世界が違っても、彼らのことを信じることができたなら…。",
+		   NULL,"Если вы, пусть не живя в их мире, как, например, Ханю, всё же верите в них...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure2", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ようこそ。",
+		   NULL,"Добро пожаловать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『ひぐらしのなく頃に〜祭囃し編〜』の世界へ。",
+		   NULL,"В мир под названием «Когда плачут цикады — Глава о Подыгрывании Фестивалю».", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この世界では、梨花たちの信じる世界をあなたも信じてくれているかどうかを試します。",
+		   NULL,"Здесь станет ясно, верите ли вы в исход, на который возлагают надежды Рика с друзьями.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　奇跡は、全員の力が集まった時にのみ起こります。",
+		   NULL,"Чудеса случаются, лишь когда все объединят силы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野の組み上げた昭和５８年６月はあまりに強固です。",
+		   NULL,"Построенный Такано июнь 58-го года Сёва невероятно прочен.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女は国家権力の中枢に入り込んで後ろ盾を得、一般人の常識を超えた様々な力を得ています。",
+		   NULL,"Она влилась в самое сердце государственного аппарата и заручилась силами, непостижимыми для обычных людей.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それに打ち勝てる勝算など百のサイコロが全て１を示してもありえません。",
+		   NULL," Выпади единица на сотне кубиков — и то не появится хоть малейшей надежды справиться с ней.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　つまり、奇跡を起こす以外に勝算は考えられないのです。",
+		   NULL,"Короче говоря, только чудо даст победить.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全員の力が集まった時にのみ、奇跡は起こります。",
+		   NULL,"Только когда все объединяются вместе, выходит чудо.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、その全員には、あなたも含まれているのです。",
+		   NULL,"И вы тоже считаетесь.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
+	ModPlayBGM( 1, "suzu", 120, 0, 0 );
+	ModPlayBGM( 1, "it_move2", 120, 0, 1 );
+	DrawScene( "white", 200 );
+
+	DrawScene( "background/fure1", 1000 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……覚悟は出来た？",
+		   NULL,"......Ну как, ты готова?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろん、私は出来てるわ。",
+		   NULL,"Само собой, я — подавно.", Line_WaitForInput);
+	OutputLine(NULL, "永い旅のコツは根詰めすぎないことよ。",
+		   NULL," Когда путь долог, вся штука в том, чтобы не перенапрягаться.", Line_WaitForInput);
+	OutputLine(NULL, "まぁ、のんびり行きましょう。",
+		   NULL," Ну, обойдёмся без лишней спешки.", Line_WaitForInput);
+	OutputLine(NULL, "私はいつものワインを飲みながらやらせてもらうわ。",
+		   NULL," С твоего позволения, буду потягивать привычное вино.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure2", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　では、始めましょう？",
+		   NULL,"Начнём, пожалуй?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ここでの時間は無限にあるのだから。",
+		   NULL,"Как-никак времени-то у нас — целая вечность.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyeCamp" );
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawSceneWithMask( "tips/getkakera", "mask1900", 7, 0, 400 );
+	Wait( 5000 );
+	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
+
+}

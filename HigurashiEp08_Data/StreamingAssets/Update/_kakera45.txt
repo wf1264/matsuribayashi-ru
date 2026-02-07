@@ -1,0 +1,98 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "instict2", 120, 0 );
+
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentDiamondNarrow", 1000);
+	DrawScene( "background/kakera", 400 );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	ModSetLayerFilter(1, 256, "sunset");
+	ModDrawCharacter(1, 2, "sprite/renasen2_muhyokaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/gy3_01", 400 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラは私たちにとって、とても重要な意味を持つ。",
+		   NULL,"Фрагмент, значащий для нас очень много.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、抗えない運命と諦めていた昭和５８年６月に、風穴を開けられるのではないかという可能性を初めて見せてくれたからだ。",
+		   NULL,"Как-никак он первым намекнул на возможность пробить дыру сквозь июнь 58-го, перед которым я сдалась, как перед неодолимой судьбой.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　結論から言えば、最後にはルールＹに取り込まれ、全ては台無しとなる。",
+		   NULL,"Забегая вперёд, развязка такова — поглощённое Правилом Игрек, всё пошло прахом.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、このゲーム盤を支配する大きな法則であるルールＸに真正面から挑み、",
+		   NULL,"Зато мы получили доказательство, что можно на равных бороться с великим законом, властвующим над игровым полем, Правилом Икс,", Line_WaitForInput);
+	OutputLine(NULL, "…これまでのカケラで学んできたことを活かし、打ち勝てることを証明した。",
+		   NULL," и, пользуясь опытом, полученным из предыдущих фрагментов, победить.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　学ぶことで、私たちは成長できる。",
+		   NULL,"Обучаясь, мы можем расти.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　勝ち目のないゲームに、わずかの勝ち目を見出すことができる。",
+		   NULL,"Можем обнаружить надежду на выигрыш в заведомо безнадёжной игре.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それを、教えてくれたとても大切なカケラ…。",
+		   NULL,"Тому научил нас вот этот важнейший фрагмент...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentDiamondNarrow", 1000);
+	DrawScene( "background/kakera", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラで、ルールＸはほぼ完全に打ち破られた。",
+		   NULL,"В нём Правило Икс потерпело чуть ли не полное поражение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前原圭一たちが、雛見沢症候群などという下らないものに惑わされ、惨劇に踊ることは、二度とない…。",
+		   NULL,"Больше Маэбару Кейти с его друзьями не собьёт с толку какой-то Хинамидзавский синдром, не заставит их кружиться в трагедии...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ルールは無敵の存在ではなく、打ち破れることも教えてくれた。",
+		   NULL,"А ещё мы узнали, что Правила уязвимы и могут быть сокрушены.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それはつまり、ゲーム盤の外にいる私たちに希望を与えてくれたわけでもある。",
+		   NULL,"Иными словами, мы, находящиеся вне игровой доски, получили надежду.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…全てのきっかけと、そしてターニングポイントとなる、重要なカケラ…。",
+		   NULL,"...Такой вот бесценный фрагмент, ставший ключом ко всему и переломной точкой игры...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyefragment" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,89 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "it_move2", 120, 0 );
+
+	DrawScene( "background/fure1", 1000 );
+//	DrawFragment("minacubemap", "FragmentWeirdShapeSmall", 1000);
+	DrawScene( "background/kakera", 400 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラだけはとても歪。",
+		   NULL,"Единственный фрагмент настолько неправильной формы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だって、昭和５８年６月より、もっと前のものだから。",
+		   NULL,"Ведь он появился задолго до июня 58-го года Сёва.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからこのカケラの有無は、私たちのゲーム盤の戦いに何の影響も及ぼさない。",
+		   NULL,"Потому его наличие никак не влияет на битву, развёртывающуюся на нашей доске.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…でも、本当に何の影響も及ぼさない役立たずのカケラなんだろうか。",
+		   NULL,"...Но правда ли он бесполезен и ни на что не влияет?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今やルールＹの正体は完全に暴かれている。",
+		   NULL,"Теперь сущность Правила Игрек полностью раскрыта.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、とても大きな組織の力で、個人たちのささやかな連帯など丸呑みにしてしまうほどの強大さを持っている。",
+		   NULL,"Его мощь огромной организации проглотит какое-то там единство нескольких человек и не подавится.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その理不尽なほどの強さに、私はこのゲームを何度も諦めそうになる。",
+		   NULL,"Его непомерная сила не раз приводила меня на грань отказа от игры.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからこそ、…思うのだ。",
+		   NULL,"Поэтому... мне думается.", Line_WaitForInput);
+	OutputLine(NULL, "……このカケラの中に、そんな強敵に立ち向かうことのできる、駒が潜んでいるのではないかと。",
+		   NULL," ......Может быть, внутри фрагмента скрыта фигура, способная противостоять настолько мощному врагу?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　赤坂衛は、東京の警視庁に勤めていて、…大きな陰謀に立ち向かえる力を持っている。",
+		   NULL,"Акасака Мамору работает в полицейском управлении города Токио... и обладает силой, дающей противостоять громадному заговору.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その力はきっと、ルールＹが相手であっても、きっと及ぶ。",
+		   NULL,"Он устоит, устоит даже против Правила Игрек.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前原圭一が、ルールＺを爽快に打ち破ったように、彼もルールＹを爽快に打ち破ってくれるのではないか。",
+		   NULL,"Не одержит ли он блестящей победы над Правилом Игрек, подобной блестящей победе Маэбары Кейти над Правилом Зет?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……全ての力がいる。",
+		   NULL,"......Нужна сила каждого.", Line_WaitForInput);
+	OutputLine(NULL, "赤坂の力も、必ずいる…。",
+		   NULL," И без Акасаки уж точно не обойтись...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eyefragment" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

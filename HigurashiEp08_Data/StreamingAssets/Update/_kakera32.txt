@@ -1,0 +1,682 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "higurashi", 120, 0 );
+
+	DrawScene( "background/moon", 400 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "background/ho_r1", "maskup", 1, 0, 1300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕にとって、",
+		   NULL,"Для меня......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……辛くて、そしてあまりに長すぎて気が遠くなりそうな日々は、まだ延々と続いている。",
+		   NULL," жестокие и головокружительно долгие дни всё идут без конца.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　叔母と沙都子は相変わらずだ。",
+		   NULL,"Отношения тётки с Сатоко не изменились.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　夜毎に叔母は沙都子の些細な何かを怒鳴りつける。",
+		   NULL,"Еженощно тётка орёт на Сатоко по пустякам.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子も、泣き出すくらいならばそれに口応えなどしなければいいものを、してしまう。",
+		   NULL,"Да и та могла бы не огрызаться, раз плачет из-за того.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、いつまでもいつまもで叔母の怒鳴り声が止まない。",
+		   NULL,"И тёткины крики не утихают.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いつまでもいつまでも沙都子の泣き声が止まない。",
+		   NULL,"И плач Сатоко никак не затихнет.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
+	ModSetLayerFilter(0, 256, "none");
+	ModDrawCharacter(0, 4, "sprite/sa1b_sakebu_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/ho_2", "maskright", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…沙都子が僕の姿を見つけ、しがみ付いて来る。",
+		   NULL,"...Завидев меня, сестра вцепляется мне в рубашку.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "maskleft" , 7, FALSE, 0, 0, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕の背中に隠れ、叔母の怒鳴り声をやり過ごそうとする。",
+		   NULL,"Прячется за спиной от тёткиных воплей.", Line_WaitForInput);
+	OutputLine(NULL, "唯一心を許す僕に頼ろうとする。",
+		   NULL," Только на меня и надеется, больше ни на кого.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……沙都子は僕以外には心を開かない。",
+		   NULL,"......Сатоко не доверяет никому, кроме меня.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だから、僕が守ってあげなかったら、それはあまりにあまりに悲しいこと。",
+		   NULL,"...И ей будет очень-очень горько, если не дам защиты.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕たちのお父さんやお母さんが沙都子に与えなかったものを、唯一の肉親である僕が与えなくてはならないのだ。",
+		   NULL,"Я, единственный родной человек, обязан давать ей то, чего не дали наши папа и мама.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それも、",
+		   NULL,"И так", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "毎日、",
+		   NULL," день за днём,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "毎日。",
+		   NULL," день за днём.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子が泣く度に、",
+		   NULL,"Всякий раз, как Сатоко плачет,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "毎日、",
+		   NULL," день за днём,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "毎日。",
+		   NULL," день за днём.", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……昨日、沙都子が僕に泣きながらしがみ付いてきた時。",
+		   NULL,"......Вчера, когда Сатоко, рыдая, вцепилась в меня...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……僕は可哀想に思いながらその頭を撫でていて、",
+		   NULL,"Я с жалостью гладил её по макушке......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……同時にもうひとつの感情に襲われていた。",
+		   NULL," вместе с жалостью ощутив и нечто иное.", Line_Normal);
+	ClearMessage();
+
+	ModPlayBGM( 1, "kaze", 120, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 120, 0, 1 );
+
+	DrawSceneWithMask( "background/aka2", "maskc", 1, 0, 1300 );
+
+	SetSpeedOfMessage( TRUE, 128 );
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その頭を、鷲掴みにして、",
+		   NULL,"Невероятное сатанинское желание", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……引き剥がして壁に叩き付けたいという、",
+		   NULL," схватить её за волосы......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "信じられない悪魔の感情。",
+		   NULL," оторвать от себя и что есть силы припечатать головою об стену.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　駄目だ駄目だ駄目だ…、",
+		   NULL,"Нет, нет, нет...", Line_WaitForInput);
+	OutputLine(NULL, "そんなことを考えちゃいけないッ…！！",
+		   NULL," не смей и думать такое!!...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや違う、考えちゃいけないんじゃなくて、気付いちゃいけなかったんだ…！",
+		   NULL,"Нет, не так; не думать — осознавать!..", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その日を境に、…僕の中にはもうひとりの僕ができた。",
+		   NULL,"С того дня... внутри меня поселился другой я.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして胸の内側から僕を食い破って、僕と入れ替わろうとするのだ。",
+		   NULL,"И он хотел меня подменить, пожирая меня изнутри.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/aka1", 400 );
+
+	ModPlayBGM( 3, "semi_r", 120, 0, 0 );
+	ModPlayBGM( 3, "semi", 120, 0, 1 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子が泣きながら僕に何かを訴える時、",
+		   NULL,"Когда рыдающая Сатоко прибегала ко мне,", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子を永遠に傷つけてしまいそうな恐ろしい言葉を次々と喉元に突き上げては、口から吐き出させようと企むのだ。",
+		   NULL," он пытался вытолкнуть из моей глотки поток ужасающих слов, что наверняка нанесли бы Сатоко незаживающую рану.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕にかまうな。",
+		   NULL,"Отстань от меня.", Line_WaitForInput);
+	OutputLine(NULL, "僕にしがみ付くな。",
+		   NULL," Не цепляйся.", Line_WaitForInput);
+	OutputLine(NULL, "うるさいからあっちへ行けッ…！！",
+		   NULL," Вали отсюда, слышать тебя не могу!!...", Line_WaitForInput);
+	OutputLine(NULL, "　駄目だ駄目だ駄目だ、いけないいけないいけない！！！",
+		   NULL," Нет-нет-нет, я не должен, не должен, не должен!!!", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕はそいつに体を乗っ取られない為、",
+		   NULL,"Чтобы он не завладел телом,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…そいつを、",
+		   NULL," я", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ぐぅっと、",
+		   NULL," напряг", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…下腹に力を入れて、外に追い出した。",
+		   NULL," мышцы живота, выталкивая его вон.", Line_WaitForInput);
+	OutputLine(NULL, "…追い出せた。",
+		   NULL," И вытолкнул.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	DrawScene( "background/sora5", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、追い出しただけでは終わりにならなかった。",
+		   NULL,"Но на том ничего не окончилось.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そのもうひとりの僕は、…何ということか、常に僕の後を追いかけてきて、再び僕の中に戻ろうとしているのだ。",
+		   NULL,"......Вытолкнутый другой я... не знаю, как сказать, — вечно ходил за мной тенью, пытаясь залезть обратно в грудь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……でも、僕は再び、このような恐ろしい僕を胸の内に入り込ませたりはしない。",
+		   NULL,"......Но я не пущу такого страшного себя внутрь.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そいつも、僕がこうして心を引き締めている以上、入り込む隙がないことはわかってる。",
+		   NULL,"Он сам понимает, что, пока я настороже, лазейки ему не сыскать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………だから、無理に入り込もうとせず、",
+		   NULL,".........И потому, оставив попытки,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…僕の後をぴったりと付けていつも背中にいて、",
+		   NULL," просто держался за мной......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……僕が気を許して心に隙間を作るのをじっとじっと待っているのだ…。",
+		   NULL," терпеливо выжидая, пока я не ослаблю бдительность...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そいつは、僕がひたひたと歩くと、",
+		   NULL,"Когда я иду куда-то твёрдой походкой......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ぺたぺたと付いて来る。",
+		   NULL," он шлёпает позади.", Line_WaitForInput);
+	OutputLine(NULL, "僕の背中を付いて来る。",
+		   NULL," Прямо у меня за спиной.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どこまでも付いて来て、横になれば枕元から僕を見下ろすのだ。",
+		   NULL,"Всюду ходит; прилягу — стоит у изголовья и пялится на меня.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そして、僕の心に再び忍び込み、沙都子を傷つける機会を窺っているのだ……。",
+		   NULL,"......И надеется улучить возможность пробраться внутрь сердца и сделать Сатоко больно......", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……最近、急に暑くなりだした。",
+		   NULL,"......На днях резко наступила жара.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのせいで、体や心がまいってしまうからこんなことを考えてしまうのだろうか…。",
+		   NULL,"Не она ли ослабила мои тело и дух, из-за чего у меня подобные мысли?..", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕は、沙都子のたったひとりの肉親なんだ。",
+		   NULL,"Я — единственный родной Сатоко человек.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だから、あの叔母から沙都子を生涯、庇い続けなくてはならないのだ……。",
+		   NULL,"......А значит, я должен всю жизнь защищать сестрёнку от тётки......", Line_WaitForInput);
+	OutputLine(NULL, "それが僕の、一生の義務…。",
+		   NULL," Таков мой пожизненный долг...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　一生？",
+		   NULL,"Пожизненный?", Line_WaitForInput);
+	OutputLine(NULL, "　生涯、永遠？",
+		   NULL," Всю жизнь, до её конца?", Line_WaitForInput);
+	OutputLine(NULL, "　僕はずっとこのままでいなければならない…？",
+		   NULL," Такой моя жизнь и останется?..", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　せめて沙都子さえ…。",
+		   NULL,"Хоть бы Сатоко...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも僕は唯一の肉親で…。",
+		   NULL,"Но у неё нет родных, кроме меня...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもいくらなんでも…。",
+		   NULL,"Но всё-таки...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそも叔母が。",
+		   NULL,"Да, вообще говоря, тётка...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもそれを言ったら村の人たちだって…！",
+		   NULL,"Но ведь и деревенский народ-то!..", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
+	DrawScene( "background/aka2", 400 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もうすぐ綿流し。",
+		   NULL,"Скоро праздник Хлопковых Корабликов.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　村の無責任な人たちが、今年もきっと祟りがあるに違いないと言っている。",
+		   NULL,"Несознательные односельчане уверяют, что быть и в этом году проклятию.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして祟りがあるなら、それは僕と沙都子に違いないなんて言っている。",
+		   NULL,"И если так, то падёт оно на меня и Сатоко.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……気のせいかもしれないが、それを“期待”する村人たちの目線が、最近、特に痛い気がするんだ…。",
+		   NULL,"......Может, мне чудится, но с недавних пор чуть ли не кожей чувствую, как деревенские жгут меня глазами с «предвосхищением»...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何だか僕は、綿流しの日に殺されてしまうような気がする。",
+		   NULL,"Что-то кажется, словно в день Ватанагаси меня убьют.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いやもちろんこれは根拠なき漠然とした妄想に過ぎないのだけれど。",
+		   NULL,"Нет, конечно, я всего-навсего брежу, ведь ничто не даёт так судить.", Line_WaitForInput);
+	OutputLine(NULL, "あぁ、ぺたぺた、ぺたぺた。",
+		   NULL," Ах, шлёп-шлёп, шлёп-шлёп.", Line_WaitForInput);
+	OutputLine(NULL, "僕の心に入ってくるな…。",
+		   NULL," Не лезь мне в душу...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　沙都子は僕のたった一人の妹で肉親なんだ、だからだからそんな恐ろしいことを僕の心に吹き込もうとするなするな……。",
+		   NULL,"Сатоко — моя единственная сестрёнка и родственница, так что, слышишь, не нашёптывай мне всякую дрянь, не нашёптывай......", Line_WaitForInput);
+	OutputLine(NULL, "ぺたぺたぺたぺた、来るな来るな来るな来るな…！！！",
+		   NULL," Шлёп-шлёп, шлёп-шлёп, не подходи, не подходи, не подходи, НЕ ПОДХОДИ!!!.....", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その足音が僕の背中にまで近付き、そして僕の肩に手を……！！！",
+		   NULL," Шаги подошли впритык, и на плечо легла ру... !!!.....", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "white", 100 );
+
+	FadeOutBGM( 0, 400, FALSE );
+
+	ModDrawCharacter(0, 2, "sprite/re1b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "background/g2", 400 );
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Сатоши</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1044", 128, TRUE);
+	OutputLine(NULL, "「ぅわッ！",
+		   NULL,"\"Уах!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1045", 128, TRUE);
+	OutputLine(NULL, "　…………ぁ、……レナか……。」",
+		   NULL," .........А...... это ты, Рэна......\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1a_nande_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1001", 128, TRUE);
+	OutputLine(NULL, "「だ、…………大丈夫かな？",
+		   NULL,"\"С......... с тобою всё хорошо?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1002", 128, TRUE);
+	OutputLine(NULL, "　……かな？」",
+		   NULL," ......хорошо?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どうも僕は、人が見てもわかるくらいに様子がおかしかったらしい。",
+		   NULL,"Судя по всему, я выглядел до того дурным, что любой бы заметил.", Line_WaitForInput);
+	OutputLine(NULL, "…レナは心配そうな顔をしていた。",
+		   NULL," На личике Рэны читалась обеспокоенность.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼女の名は竜宮レナ。",
+		   NULL,"...Её зовут Рюгу Рэна.", Line_WaitForInput);
+	OutputLine(NULL, "最近、引っ越してきたばかりの転校生だ。",
+		   NULL," Недавно переехала к нам в деревню.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　覚えている子はいないのだけど、ずいぶん昔に雛見沢に住んでいたらしい。",
+		   NULL,"Из детей никто её не помнит, но говорят, что давным-давно та жила в Хинамидзаве.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もっとも、彼女も雛見沢のことはおぼろげにしか覚えていないというが。",
+		   NULL,"Правда, сама она, по её словам, деревню помнит лишь смутно.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　歳の近いクラスメートが魅音しかいない僕にとっては、とても貴重な友人だった。",
+		   NULL,"Я был очень рад подружиться с ней, так как, помимо Мион, все в классе намного младше.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　普段は魅音と一緒に楽しそうにはしゃいでいるが、時折、女の子らしい気遣いも見せてくれる。",
+		   NULL,"Обыкновенно та веселится с Мион, однако временами проявляет и участие, подобающее девочке.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1003", 128, TRUE);
+	OutputLine(NULL, "「具合悪いの…？",
+		   NULL,"\"Тебе нехорошо?..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1004", 128, TRUE);
+	OutputLine(NULL, "　保健室で休んだ方がいいんじゃないかな。",
+		   NULL," Может быть, отдохнёшь в кабинете медсестры?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1005", 128, TRUE);
+	OutputLine(NULL, "…かな。」",
+		   NULL," ...медсестры?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Сатоши</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1046", 128, TRUE);
+	OutputLine(NULL, "「ありがとう。",
+		   NULL,"\"Спасибо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1047", 128, TRUE);
+	OutputLine(NULL, "大丈夫だよ。",
+		   NULL," Я в порядке.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1048", 128, TRUE);
+	OutputLine(NULL, "……僕、そんなにも具合が悪そうだったかい？」",
+		   NULL," ......Что, совсем с виду плох?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1006", 128, TRUE);
+	OutputLine(NULL, "「うん。」",
+		   NULL,"\"Угу.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　澱みない返事に、僕は相当に具合を悪そうにしていたことを知る。",
+		   NULL,"Её незамедлительный ответ показал, что я и впрямь выглядел далеко не лучшим образом.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1007", 128, TRUE);
+	OutputLine(NULL, "「…………沙都子ちゃんのことで、",
+		   NULL,"\".........Тебя волнует", Line_Continue);
+	OutputLine(NULL, "…心配事？」",
+		   NULL," Сатоко-тян?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Сатоши</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1049", 128, TRUE);
+	OutputLine(NULL, "「いや、…そういうわけじゃないんだよ。」",
+		   NULL,"\"Да нет... не то чтобы.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕の具合が悪いのが、体調のせいでなく、心労のせいだといきなり核心を突いて来る…。",
+		   NULL,"Она, не ходя вокруг да около, сразу подметила, что причина моего дурного самочувствия не в теле, но в неспокойном сердце.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……これは僕の直感だが、レナはおっとりとしているように見えて、意外に鋭いタイプなのかもしれない…。",
+		   NULL,"......Как догадываюсь, несмотря на внешнюю беззаботность, Рэна скорее остра умом...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1008", 128, TRUE);
+	OutputLine(NULL, "「……レナは、転校してきたばかりだから、頼りないかもしれないけど…。",
+		   NULL,"\"......Рэна только что переехала и вряд ли может принести пользу...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1009", 128, TRUE);
+	OutputLine(NULL, "話を聞くことはできるからね。",
+		   NULL," Зато выслушать она может.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1010", 128, TRUE);
+	OutputLine(NULL, "……きっと聞いてあげるだけでも、少しは心が軽くなると思うから。」",
+		   NULL," ......Я думаю, стоит выложить душу, как уже полегчает.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女は転校してきてまだ日が浅いにもかかわらず、…僕たち北条兄妹や、それを取り巻く村の事情を敏感に感じ取っているようだった。",
+		   NULL,"Хотя с её переезда дней пролетело совсем ничего, про нас, детей Ходзё, и наши отношения с деревней она, видно, успела понять.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、……話したって、何の解決にもならない。",
+		   NULL,"Но...... признание ничего не решит.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…いや、むしろ…。",
+		   NULL,"Что там...", Line_WaitForInput);
+	OutputLine(NULL, "話してしまうことで、僕の心が弱さを認めてしまって、",
+		   NULL," Рассказав, я признаю слабость своего духа......", Line_WaitForInput);
+	OutputLine(NULL, "……もう一人の自分に侵食してくる隙を与えてしまうような気がしたから…。",
+		   NULL," и сдаётся, что тем самым открою другому себе лазейку внутрь...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	ModDrawCharacter(0, 2, "sprite/re1a_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1011", 128, TRUE);
+	OutputLine(NULL, "「さっき、声を掛けたらすごく驚いたでしょ？",
+		   NULL,"\"Ты сейчас испугался, когда я к тебе обратилась, не так ли?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1012", 128, TRUE);
+	OutputLine(NULL, "　そんなにも考え事をしてるなら、…きっと辛い悩みなんだろうなって思って…。",
+		   NULL," Если уж настолько задумался... знать, сильно тебя что-то мучает, вот...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1013", 128, TRUE);
+	OutputLine(NULL, "はぅ…。」",
+		   NULL," Хау...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Сатоши</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1050", 128, TRUE);
+	OutputLine(NULL, "「それは、………あははは。",
+		   NULL,"\"Да, понимаешь......... а-ха-ха-ха.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1051", 128, TRUE);
+	OutputLine(NULL, "なぜか最近、…誰かにずっと後を付けられているような錯覚がしてね。",
+		   NULL," Отчего-то с недавних пор... кажется, будто кто-то всё время ходит за мной.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1052", 128, TRUE);
+	OutputLine(NULL, "……ひたひた、ぺたぺた。",
+		   NULL," ......Топ-топ, шлёп-шлёп.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1053", 128, TRUE);
+	OutputLine(NULL, "…だからそれかと思って……。",
+		   NULL," И мне показалось, что ты — то самое......", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1054", 128, TRUE);
+	OutputLine(NULL, "…って、あははははは、ごめん。",
+		   NULL," ...Э-э, а-ха-ха-ха-ха-ха, извини.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1055", 128, TRUE);
+	OutputLine(NULL, "僕は一体何を言っているんだか。」",
+		   NULL," Что это я мелю вообще?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM( 1, 300, FALSE );
+	ModDrawCharacter(0, 2, "sprite/re1b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1014", 128, TRUE);
+	OutputLine(NULL, "「……………足音？",
+		   NULL,"\"............Шаги?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1015", 128, TRUE);
+	OutputLine(NULL, "　……ついてくるの…？」",
+		   NULL," ......Ходят за тобой?..\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Сатоши</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s20/07/vtk1_satoshi1056", 128, TRUE);
+	OutputLine(NULL, "「……え？」",
+		   NULL,"\"......А?\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	PlaySE( 0, "s_suzu", 128, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s20/02/vtk1_rena1016", 128, TRUE);
+	OutputLine(NULL, "「…………私、",
+		   NULL,"\".........Я", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……その足音、",
+		   NULL,"...... знаю", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "知ってる。」",
+		   NULL," о шагах.\"", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+
+}

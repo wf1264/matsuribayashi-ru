@@ -1,0 +1,200 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "instict2", 120, 0 );
+
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentDiamond", 1000);
+	DrawScene( "background/kakera", 400 );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacter(1, 9, "sprite/ta3_akuwarai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "background/ymo3", 400 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このゲーム盤を影から支配し続け、その尻尾を掴ませることもなかったルールＹが、全て暴き出されるカケラ。",
+		   NULL,"Фрагмент, выставивший напоказ Правило Игрек, неуловимо правившее игрой из тени.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そちらの方の印象が強いので、とても大切なことを忘れてしまうけど。",
+		   NULL,"......Из-за силы производимого им впечатления можно забыть кое-что крайне важное...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…このカケラで、ルールＺが完膚なきまでに打ち破られたことを忘れてはならない。",
+		   NULL,"Но нельзя забывать, что здесь мы разбили Правило Зет в мельчайшие дребезги.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　かつて古手梨花に、もっともどうしようない運命と嘆かせたルールＺは、全てを学んだ前原圭一たちにとって、もはや敵ですらなかったということだ。",
+		   NULL,"Правило Зет, считавшееся Фурудэ Рикой самым безнадёжным уделом, не смогло чего-либо противопоставить Маэбаре Кейти со всеми остальными, кто усвоили полученные в прежних мирах уроки.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼らは正しい戦い方を知り、ゲーム盤のルールに則って戦った。",
+		   NULL,"Они знали правильный подход к борьбе и дрались по правилам игрового поля.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その結果、勝ち取った勝利は、……実は私たちにとって何よりも価値のあること。",
+		   NULL,"Одержанная в итоге победа...... оказалась для нас ценнее чего бы то ни было.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、前原圭一が私に示すのだ。",
+		   NULL,"И Маэбара Кейти показал мне.", Line_WaitForInput);
+	OutputLine(NULL, "どんな運命にも屈服することはない。",
+		   NULL," Никакая судьба не заслуживает того, чтобы ей сдаваться.", Line_WaitForInput);
+	OutputLine(NULL, "信じる力だけが打ち砕くのだ、と。",
+		   NULL," Одна лишь вера пробьётся сквозь что угодно.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私を屈服させる運命もまた、鷹野三四の信じる力によって作られている。",
+		   NULL,"Судьба-то, что ставит меня на колени, тоже порождена верой Такано Миё.", Line_WaitForInput);
+	OutputLine(NULL, "……だからそれは、道理なのだ。",
+		   NULL," ......А значит, он прав.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　信じる力に打ち勝つには、負けないくらいの信じる力がいる。",
+		   NULL,"Чтобы одолеть веру, нужна такая вера, что ей не уступит.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　意思の強さには、意思の強さでしか、穿てない。",
+		   NULL,"Сквозь сильную волю пробьётся лишь сильная воля.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ルールＸとＺに打ち勝ち、最後のルールＹに挑むが、",
+		   NULL,"Преодолев правила Икс и Зет, мы бросили вызов последнему, Игрек......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……私たちの駒は足りなかった。",
+		   NULL," но наших фигур не хватило.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　個々の駒はよく奮闘したが、…鷹野三四を筆頭にする敵方の駒は圧倒的だった。",
+		   NULL,"Каждая фигура сражалась на пределе возможностей, но их не хватило, чтобы совладать со вражескими фигурами под началом Такано Миё.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　過程など慰めにしかならないくらいに、圧倒的に私たちの駒をすり潰し、再びゲーム盤を振り出しに戻させた…。",
+		   NULL,"Она безжалостно раздавила нас, как муравьишек, и заставила начинать всё с начала...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、……私たちは負けたけれど、心から屈服はしなかった。",
+		   NULL,"Но...... хоть мы и проиграли, всё-таки не сдались.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜなら、……ようやく戦うべき、最後の相手を見つけ、その戦い方を知ったのだから。",
+		   NULL,"Потому как...... наконец обнаружили последнего врага и узнали, как с ним бороться.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今の駒の数では、勝てない。",
+		   NULL,"С имеющимися фигурами победы не одержать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　信じる力や、意思の強さが、足りないから。",
+		   NULL,"Не хватает силы верить и твёрдости воли.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、私と羽入は何度もやり直す。",
+		   NULL,"Но Ханю и я будут пробовать снова и снова.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	SetSpeedOfMessage( TRUE, 128 );
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　サイコロを何度も振り、",
+		   NULL,"Кидать кости", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "良い目を探し、",
+		   NULL," в поисках лучшего результата,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "駒を集め、",
+		   NULL," собирать фигуры", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "何度も挑む。",
+		   NULL," и снова пробовать.", Line_WaitForInput);
+	OutputLine(NULL, "……鷹野の意思に負けないくらいの強い意志で。",
+		   NULL," ......С волей, которая не уступит стремлению Такано.", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "", Line_Normal);
+
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたも、ここに至るまでに何度か挫けそうになったでしょう…？",
+		   NULL,"А тебе как, тоже не раз приходила мысль сдаться?..", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも挫けず、私と共にここまで辿り着けた。",
+		   NULL,"Но ты, не пав духом, прошла со мной через всё — и вот как далеко мы зашли.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もう一息だから、…がんばろう。",
+		   NULL,"Осталось совсем чуть-чуть — постараемся же.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最後のカケラを、作り出そう。",
+		   NULL,"Сотворим последний фрагмент.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それはとても幸せな最高のカケラだから、次のカケラが必要ない。",
+		   NULL,"Он будет лучшим, счастливейшим, а значит, иных нам не нужно.", Line_WaitForInput);
+	OutputLine(NULL, "…だから、最後のカケラ。",
+		   NULL," Потому он последний.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さぁ、駒を集めよう。",
+		   NULL,"Итак, соберём фигуры.", Line_WaitForInput);
+	OutputLine(NULL, "奇跡を集めよう。",
+		   NULL," Соберём чудеса.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あなたの願いと、思いと、夢を、どうか私に託して…。",
+		   NULL,"Прошу, доверь мне свои желания, помыслы и мечты...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

@@ -1,0 +1,128 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Instict", 120, 0 );
+
+	DrawScene( "background/fure2", 1000 );
+	DrawScene( "white", 1000 );
+	ModSetLayerFilter(0, 256, "none");
+	ModDrawCharacter(0, 1, "sprite/kei1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "background/gk3", "maskc", 1, 0, 1000 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前原圭一が、みんなを率いる駒に成長してくれるために、…まず学ばなければならない、",
+		   NULL,"Ради того, чтобы Маэбара Кейти дорос до фигуры, ведущей за собой всех, он должен сперва познать", Line_WaitForInput);
+	OutputLine(NULL, "痛く、辛く、悲しいカケラ。",
+		   NULL," мучительный, тяжёлый, горький фрагмент.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　仲間を学び、疑わないことを学ぶ。",
+		   NULL,"Познать друзей, познать, как не сомневаться.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼は仲間を信じるという言葉の重さを、",
+		   NULL,"Пока что ему", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "まだ、",
+		   NULL," неведома", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "知らない。",
+		   NULL," тяжесть слов «доверяй другу».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　わずかの不信感から疑心暗鬼を育て、ルールＸに囚われる前原圭一。",
+		   NULL,"Развив из небольшого подозрения паранойю, Маэбара Кейти попадается Правилу Икс.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　圭一は悲しい遺書を残し、",
+		   NULL,"И умирает", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 900 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ルールＸの果てに、",
+		   NULL," из-за Правила,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "死ぬ。",
+		   NULL," оставив после себя печальную записку.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/fure2", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは辛く悲しいことだけど、",
+		   NULL,"Оно тяжело и горько......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………でも、大切なことを学ぶための大切なプロセス。",
+		   NULL," но важно для постижения важных вещей.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/fure1", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…ねぇ、羽入。",
+		   NULL,"...Знаешь, Ханю...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　やっぱりあなたは謝らなくてよかったのよ。",
+		   NULL,"Лучше бы ты всё-таки не просила прощения.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼が親類のお葬式で雛見沢を離れたわずか数日。",
+		   NULL,"В те несколько дней, на которые он уехал из Хинамидзавы ради похорон родственника...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…その間に彼が発症してしまったことは確かに悲劇的だけれど。",
+		   NULL,"Трагично, конечно же, что болезнь развилась тогда...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもそれは、彼が大切なことを学ぶための第一歩として必要なことだったんじゃないかって思う。",
+		   NULL,"Но мне кажется, то был первый шаг, необходимый для постижения им важных вещей.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ルールＸをあぶり出し、やがては打ち勝つための最初の第一歩として。",
+		   NULL,"Первейший шаг на пути к тому, чтобы раскрыть Правило Икс и в конце концов победить его.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラしかなかった頃は、そんなこと、考えもしなかったけれどね……。",
+		   NULL,"Правда, мы о том даже не задумывались, когда располагали только этим фрагментом......", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

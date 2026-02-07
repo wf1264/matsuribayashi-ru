@@ -1,0 +1,586 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 1, "Rain", 120, 0 );
+	PlayBGM( 0, "Iru", 120, 0 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "background/mob1_01", 1000 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かに天気予報は、夕方に土砂降りになるかもしれないと予告していたが…、",
+		   NULL,"Да, в прогнозе предупреждали, что к вечеру может полить...", Line_WaitForInput);
+	OutputLine(NULL, "まさかここまで降ってくるとは思わなかった。",
+		   NULL," но такого ливня не ожидал.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕たちは、廃線になったバス停跡の小屋で、雨雲が過ぎ去るのを待っていた。",
+		   NULL,"Укрывшись под навесом уже заброшенной автобусной остановки, мы ждали, когда же тучи рассеются.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800001", 128, TRUE);
+	OutputLine(NULL, "「…ごめんよ、鷹野さん。」",
+		   NULL,"\"...Виноват я, Такано-сан.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900001", 128, TRUE);
+	OutputLine(NULL, "「あら、いいのよ気にしないで、ジロウさん。",
+		   NULL,"\"Ой, пустяки, не переживайте так, Дзиро-сан.", Line_Continue);
+	OutputLine(NULL, "私も、土砂降りになるかもしれないことを覚悟の上で出掛けたんだから。",
+		   NULL," Я сама пошла, зная, что может хлынуть.", Line_Continue);
+	OutputLine(NULL, "くすくすくす。」",
+		   NULL," Хи-хи-хи.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんがくすくす笑う。",
+		   NULL,"Такано-сан захихикала.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　天気が崩れるかもしれないという彼女に、大丈夫大丈夫といって連れ出したのが僕なのだ。",
+		   NULL,"Она говорила, что погода может испортиться, а я беспечно вытащил её на прогулку.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…彼女の貴重な休日を無理に付き合わせ、こんなザマでは男としてみっともないったりゃありゃしなかった…。",
+		   NULL,"...Как мужчина, я готов был провалиться на месте от стыда за своё дурацкое упорство, что испортило ей выходной...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今夜が帰京なので、また当分、雛見沢には来れない。",
+		   NULL,"Сегодня ночью ехать обратно в столицу, так что Хинамидзаву вновь увижу нескоро.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう思ったら、今日を興宮の安宿で過ごす気になれなくて、彼女に散策に行こうと誘ったのだ。",
+		   NULL,"Из-за таких мыслей я не пожелал проводить последний день здесь в дешёвой окиномийской гостинице и пригласил её на прогулку.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800002", 128, TRUE);
+	OutputLine(NULL, "「いや、………ははは…。",
+		   NULL,"\"Н-да...... ха-ха-ха...", Line_Continue);
+	OutputLine(NULL, "本当に申し訳ない。」",
+		   NULL," Мне искренне жаль.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900002", 128, TRUE);
+	OutputLine(NULL, "「くすくすくすくす。」",
+		   NULL,"\"Хи-хи-хи-хи.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女はしばらく、小さく悪態をつくフリをしてはチクチクと僕をからかった。",
+		   NULL,"Некоторое время она подсмеивалась надо мной, притворяясь негодующей.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　決して追い詰めるのを楽しんでいるわけではない。",
+		   NULL,"Она отнюдь не издевалась ради забавы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな彼女なりのコミュニケーションをとてもチャーミングに思っていた。",
+		   NULL,"Её особенный стиль общения казался мне весьма-таки очаровательным.", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…僕は多分、…いつの頃からか彼女の虜なんだと思う。",
+		   NULL,"Пожалуй... с каких пор — не знаю, но я ею пленён.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、彼女にとって僕は東京から来る査察官でしかない。",
+		   NULL,"Правда, в её глазах я не более чем инспектор из Токио.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そういう立場を認識して、僕に好意的に接してくれているだけで、決して僕個人を好いていてくれているわけではないはずだ。",
+		   NULL,"Потому она и относится ко мне благожелательно, вовсе не потому, что я нравлюсь ей как человек.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そう思うと、自分は職務上の立場を使って、彼女を無理やり連れ出したのではないかという気持ちになり、少し憂鬱になる。",
+		   NULL,"......Подумав так, я немного загрустил: уж не против ли воли утащил её с собой, пользуясь вышестоящим положением по службе?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕のこの微熱は、恋心でなく風邪か何かだと思い込んでおいた方がいいだろう。",
+		   NULL,"Наверное, лучше считать, что лёгкий жар, в который меня бросает, — от простуды или чего ещё, не от влюблённости.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、彼女は嫌な時はきっぱりと嫌だと言う人だ。",
+		   NULL,"Всё же она из тех, кто прямо говорит, когда ей что-то не нравится.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……もちろん「嫌」という言葉は使わないが、あらゆる間接的表現で、「嫌」に準じることをきっぱり言う人だ。",
+		   NULL,"......Она, разумеется, не говорит напрямую: «Мне неприятно», пользуясь вместо него различными косвенными, но более чем понятными средствами.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だからこそ、彼女が僕に付き合ってくれるのは、わずかでも好意があるからだと信じたい。",
+		   NULL,"...Вот почему хочется верить, что пойти она согласилась из-за некоторой благосклонности ко мне.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/mob1_01", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800003", 128, TRUE);
+	OutputLine(NULL, "「………はぁ。」",
+		   NULL,"\".........Фу-ух.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな自己中心的な考えに苛まれ、僕は軽く首を横に振るのだった。",
+		   NULL,"Мучимый такими вот себялюбивыми мыслями, я тихонько потряс головой.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕のそんな様子を見て、まるで胸中を見通しているかのように彼女はくすりと笑うのだった。",
+		   NULL,"При виде того Такано-сан захихикала, будто бы зная, что творится в моей душе.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな仕草に、思わず赤面してしまう。",
+		   NULL,"Я невольно порозовел.", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900003", 128, TRUE);
+	OutputLine(NULL, "「ジロウさんも不思議な人ね。",
+		   NULL,"\"А вы ведь тоже загадочный человек, Дзиро-сан.", Line_Continue);
+	OutputLine(NULL, "東京ではさぞや女性にもてるでしょうに、なぜわざわざ私みたいなおかしな女に付き合ってくださるのかしら…？」",
+		   NULL," В Токио женщины вокруг вас, наверное, стайками вьются, так почему вы гуляете с какой-то чудачкой вроде меня?..\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800004", 128, TRUE);
+	OutputLine(NULL, "「お、おかしななんてことはないよ…。",
+		   NULL,"\"Д-да что вы, какая ещё чудачка...", Line_Continue);
+	OutputLine(NULL, "鷹野さんは充分、魅力的だよ…！",
+		   NULL," Вам привлекательности не занимать, Такано-сан!..", Line_Continue);
+	OutputLine(NULL, "　むしろ、僕みたいな男のために貴重な休日を割いてもらったのが、申し訳ないくらいだよ。」",
+		   NULL," Что там, я не заслуживаю, чтобы вы тратили на такого, как я, свой выходной.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900004", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「確かに私は、とても大切な研究のために生涯を捧げたつもりだけど。",
+		   NULL,"\"Конечно, я твёрдо решила посвятить свою жизнь важнейшему исследованию,", Line_Continue);
+	OutputLine(NULL, "それだけじゃ人生は潤いがないもの。",
+		   NULL," только жизнь суховата, когда ничего другого в ней нет.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900005", 128, TRUE);
+	OutputLine(NULL, "たまには、頭を切り替えて遊ぶことも大事だし。",
+		   NULL," Нужно временами отвлечься на что-то ещё.", Line_Continue);
+	OutputLine(NULL, "……それに、異性とのコミュニケーションは脳の活性にもとてもいいんだから。",
+		   NULL," ......К тому же общение с противоположным полом крайне полезно для лучшей работы мозга.", Line_Continue);
+	OutputLine(NULL, "くすくす。」",
+		   NULL," Хи-хи.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800005", 128, TRUE);
+	OutputLine(NULL, "「あははははは…。",
+		   NULL,"\"А ха ха ха ха ха...", Line_WaitForInput);
+	OutputLine(NULL, "僕ごときで、鷹野さんの頭の気分転換のお役に立ててるならいいんだけどね…。」",
+		   NULL," Рад сгодиться на то, чтобы разнообразить вашу жизнь...\"", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900006", 128, TRUE);
+	OutputLine(NULL, "「あなたには、私と一緒に居ても気分転換にはならない…？」",
+		   NULL,"\"А вашу жизнь общение со мной не разнообразит?..\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんが、どきりとさせる小悪魔的な笑顔で微笑みかける。",
+		   NULL,"Такано-сан заулыбалась дьяволёнком — в груди громко стукнуло.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕は、耳まで真っ赤になっているかもしれないのを悟られないように、誤魔化すので必死だった。",
+		   NULL,"Я торопливо попытался заговорить ей зубы, надеясь, что та не заметит моего, кажется, до ушей покрасневшего лица.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800006", 128, TRUE);
+	OutputLine(NULL, "「そんなことないよ…！",
+		   NULL,"\"Да что вы!..", Line_Continue);
+	OutputLine(NULL, "　僕も鷹野さんと一緒に過ごせると、こう、…その、色々と気分転換になるよ！",
+		   NULL," Когда я с вами, то, ну... э-э, прямо новое дыхание открывается!", Line_Continue);
+	OutputLine(NULL, "　それにほら、鷹野さんに野鳥撮影のことを布教すれば、僕も撮影の同志を得られるわけだしね…！",
+		   NULL," И ещё, если вот вам откроется, чем хороша фотография диких птиц, мне будет с кем ею заниматься!..", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800007", 128, TRUE);
+	OutputLine(NULL, "　も、もしよかったら、次に来る時は僕の古いカメラを持ってくるよ。",
+		   NULL," Е-если хотите, на следующий раз привезу свою старую фотокамеру.", Line_WaitForInput);
+	OutputLine(NULL, "買うと高いからね、はははは…。」",
+		   NULL," Покупать-то недёшево, ха ха ха ха...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900007", 128, TRUE);
+	OutputLine(NULL, "「ありがとう。",
+		   NULL,"\"Спасибо.", Line_Continue);
+	OutputLine(NULL, "あなたを虜にする野鳥撮影が、どれくらい楽しいのか、くす、ぜひ教えていただけると嬉しいわ。",
+		   NULL," Буду очень рада узнать от вас — кхи, — насколько весела эта съёмка диких птиц, которой вы увлеклись.", Line_Continue);
+	OutputLine(NULL, "ぜひ、次の機会には野鳥撮影の散策にご一緒したいわね。",
+		   NULL," Обязательно в следующую поездку возьмите меня поснимать их.", Line_Continue);
+	OutputLine(NULL, "じゃあ私、自分では買わなくていいのかしら？」",
+		   NULL," Значит, мне можно не покупать свою?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800008", 128, TRUE);
+	OutputLine(NULL, "「あ、あ、うん！",
+		   NULL,"\"А, а, угу!", Line_Continue);
+	OutputLine(NULL, "　僕のお古で少し挑戦してみて、馴染めそうだったら新しいカメラを買う方がいいんじゃないかな！",
+		   NULL," Попытаете силы с моей старушкой, а там, если понравится, можете и себе купить новенькую!", Line_Continue);
+	OutputLine(NULL, "　と、東京に戻ったら送るよ！」",
+		   NULL," К-как вернусь в Токио, вышлю!\"", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900008", 128, TRUE);
+	OutputLine(NULL, "「ありがとう。",
+		   NULL,"\"Спасибо.", Line_Continue);
+	OutputLine(NULL, "次に来て下さる時は、ぜひ私の写真の批評をお願いするわね。」",
+		   NULL," Как в следующий раз приедете, прошу со всем пристрастием оценить сделанные мной фотографии.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800009", 128, TRUE);
+	OutputLine(NULL, "「う、うん…！",
+		   NULL,"\"У-угу!..", Line_Continue);
+	OutputLine(NULL, "　ははは、どんな写真か、楽しみだなぁ！」",
+		   NULL," Ха ха ха, не терпится их увидеть!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900009", 128, TRUE);
+	OutputLine(NULL, "「くすくす。",
+		   NULL,"\"Хи-хи.", Line_Continue);
+	OutputLine(NULL, "きっとジロウさんみたいにはいかないわ。",
+		   NULL," Ну, с вашими они точно не поспорят.", Line_Continue);
+	OutputLine(NULL, "本当に初めてですもの。」",
+		   NULL," Как-никак я фотографией раньше не занималась.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　涼やかに笑う彼女と、真っ赤になって頭を掻きながら笑う僕の暑苦しさではまったく対照的だった。",
+		   NULL,"Она, с её спокойной улыбкой, от которой веяло прохладой, и я — красный до жарко пылающих ушей, чешущий затылок, — две полные противоположности.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、…僕の自意識過剰なのだろうか…。",
+		   NULL,"Впрочем... не увлёкся ли я самокопанием?..", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんは、僕と一緒にいることを苦痛に思っていないように感じてしまう。",
+		   NULL,"Кажется, что Такано-сан вовсе не в тягость быть со мной.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……社交辞令だったら、ここまでは付き合ってくれないはず。",
+		   NULL,"......Она бы не зашла так далеко из одной светской учтивости.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………あぁあぁいかんいかん。",
+		   NULL,".........Ай, ай, что это я, что это я.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　女の人の社交辞令を真に受けてしまって、勝手に傷つくのが僕の悪いところじゃないか…。",
+		   NULL,"Забыл, что ли, про свою дурную привычку — принимать женскую вежливость за чистую монету и страдать потом, обманувшись...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女が僕に好意を持っているかもしれないなんて、誤解しちゃ駄目だ駄目だ…。",
+		   NULL,"Ты не можешь ей нравиться, не обманывай себя, не обманывай...", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900010", 128, TRUE);
+	OutputLine(NULL, "「……そう言えば、こうしてジロウさんと二人きりでゆっくりおしゃべりをするのは初めてね。」",
+		   NULL,"\"......Ах да, Дзиро-сан, мы ведь впервые вот так спокойно беседуем, верно?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800010", 128, TRUE);
+	OutputLine(NULL, "「そ、そうだね。",
+		   NULL,"\"В-вы правы.", Line_Continue);
+	OutputLine(NULL, "いつも、所長とか他の研究員の人とかがいたりするからね。」",
+		   NULL," Обычно-то рядом то директор, то другие работники.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900011", 128, TRUE);
+	OutputLine(NULL, "「私、あなたのことを全然知らないの。",
+		   NULL,"\"Я про вас ничего и не знаю.", Line_Continue);
+	OutputLine(NULL, "あなたが東京でどんな仕事をしているかとか、今までどんなことをしてきたのかとか。",
+		   NULL," Какую работу выполняете в Токио, чем занимались прежде.", Line_Continue);
+	OutputLine(NULL, "自衛隊ではどんな活躍をされているのかしら…？」",
+		   NULL," Что вы делаете в Силах самообороны?..\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800011", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「あは、あはははは…。",
+		   NULL,"\"А-ха, а ха ха ха ха...", Line_Continue);
+	OutputLine(NULL, "昔ちょっとだけ教官の真似事をしてたけどね。",
+		   NULL," Как-то давно инструктора войскового поизображал, недолго совсем.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800012", 128, TRUE);
+	OutputLine(NULL, "怪我をした時に目をやっちゃってね。",
+		   NULL," Угораздило глаз повредить.", Line_Continue);
+	OutputLine(NULL, "普段の生活には支障はないんだけど、大事に受け取られちゃって、それ以来は事務屋の仕事ばかりやらされてるんだよ。",
+		   NULL," В повседневной жизни никаких неудобств, но травму сочли серьёзной, и с тех пор ничего, кроме бумажной работы, не видел.", Line_Continue);
+	OutputLine(NULL, "あははは…。」",
+		   NULL," А ха ха ха...\"", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんは、きっとドジを踏んで怪我をしてしまったのでしょう、みっともないとくすくす笑う。",
+		   NULL,"Такано-сан посмеялась: знать, по глупости с глазом такая беда приключилась.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800013", 128, TRUE);
+	OutputLine(NULL, "「それでね、隊内の広報誌を作る仕事を手伝った時に、イベントの写真撮影で初めてカメラの魅力を知ったんだよ！",
+		   NULL,"\"И вот, когда помогал армейским журналистам выпускать стенгазету, там проходил фотоконкурс — тогда я и полюбил фотографию!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800014", 128, TRUE);
+	OutputLine(NULL, "　カメラには人を幸せにする力があるのさ。",
+		   NULL," Фотоаппараты в силах приносить людям счастье.", Line_Continue);
+	OutputLine(NULL, "あはははは、何を言ってるんだろうって思ってるだろうけど、これは本当なのさ。",
+		   NULL," А-ха-ха-ха-ха, вы, верно, думаете: что это я несу? — но поверьте, так оно и есть.", Line_Continue);
+	OutputLine(NULL, "僕はカメラに触れるようになってから、日々に幸せを感じるようになったと思ってるよ。」",
+		   NULL," С тех пор как взял в руки фотоаппарат, моя жизнь наполнилась счастьем.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900012", 128, TRUE);
+	OutputLine(NULL, "「………カメラで、どうして幸せになれるのかしら…？」",
+		   NULL,"\".........А как фотоаппараты приносят счастье?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800015", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「うん。",
+		   NULL,"\"Угу.", Line_Continue);
+	OutputLine(NULL, "カメラというのは、日々の生活を切り取って写真にして残すものなんだ。",
+		   NULL," они созданы для того, чтобы фотографировать и увековечивать кусочки повседневной жизни.", Line_Continue);
+	OutputLine(NULL, "残すくらいなんだから、幸せなものを写したいというのは当然だろう？",
+		   NULL," И если сохранять что-нибудь на потом, естественно, что хочется сохранить счастливые мгновения, правда?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800016", 128, TRUE);
+	OutputLine(NULL, "　じゃあ、幸せなものはどこにあるんだろうと、ファインダー越しに自分の周りの世界を覗いてみると。",
+		   NULL," Так вот, смотришь ты через видоискатель на мир, ищешь — где же оно, это счастье...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800017", 128, TRUE);
+	OutputLine(NULL, "…そこには、今まで当り前だと思っていたものが、実はとても幸せなものだったんだと気付くことでいっぱいなんだ。",
+		   NULL," И вдруг понимаешь: то, что тебе казалось самым обычным, на деле переполнено счастьем. И так постоянно.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800018", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "　…例えば、路肩のアスファルトの隙間から健気に生えている一輪のタンポポだって、忙しく通り過ぎる時にはただの雑草に過ぎないけれど、",
+		   NULL,"Например, одуванчик, с трудом пробившийся на поверхность сквозь треснувший асфальт, в хлопотной будничной жизни покажется ничем не примечательным сорняком,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800019", 128, TRUE);
+	OutputLine(NULL, "ファインダー越しに覗いた時、それは春の訪れを教えてくれる、季節からの素敵な贈り物であったことに気付けるんだよ。",
+		   NULL," однако, глядя на него через видоискатель, в нём замечаешь чудесный подарок, возвещающий о приходе весны.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800020", 128, TRUE);
+	OutputLine(NULL, "それを写真に収め、アルバムに残す。",
+		   NULL," Заснимешь его, положишь снимок в альбом,", Line_Continue);
+	OutputLine(NULL, "…そしてアルバムを再び開く度に、その時の幸せな気持ちが蘇ってくるんだ。」",
+		   NULL," и каждый раз, как потом откроешь его, вновь нахлынет тогдашнее счастливое чувство.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900013", 128, TRUE);
+	OutputLine(NULL, "「ジロウさんは風景や野鳥の撮影をしながら、そんな気持ちに浸っているの…？」",
+		   NULL,"\"И такие вот чувства переполняют вас, когда фотографируете диких птиц и пейзажи?..\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800021", 128, TRUE);
+	OutputLine(NULL, "「うん。",
+		   NULL,"\"Угу.", Line_Continue);
+	OutputLine(NULL, "その写真が芸術的かどうかとか、賞を取れるような劇的瞬間かどうかなんていう野心的なことは、僕にとってあまり重要じゃないんだよ。",
+		   NULL," Меня не слишком заботит, художественны ли мои фотографии, заслуживают ли они каких-то наград.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800022", 128, TRUE);
+	OutputLine(NULL, "僕たちが気付かない、",
+		   NULL," Я считаю, что притягательность фотокамер — в их способности открывать нам крупицы счастья,", Line_Continue);
+	OutputLine(NULL, "小さな幸せに気付かせてくれる、そこにこそカメラの魅力があるんだと思っているんだ。",
+		   NULL," которых мы не замечаем.", Line_WaitForInput);
+	OutputLine(NULL, "だから、そんな気持ちでこの雛見沢をファインダーで覗けることはとても楽しくて幸せなことなんだよ。」",
+		   NULL," И потому я безмерно рад, счастлив рассматривать Хинамидзаву через видоискатель.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900014", 128, TRUE);
+	OutputLine(NULL, "「…………………………ふぅん…。」",
+		   NULL,"\"..............................Хм-м-м...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　僕に、たまに雄弁に語り過ぎてしまうことはよくあったが、多くの場合、鷹野さんに揚げ足を取られて茶化される。",
+		   NULL,"Я частенько заговариваюсь, увлёкшись, но в большинстве случаев Такано-сан высмеивает меня, поймав на слове.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だから、彼女がこんなにも素直に話を聞いてくれるのはとても珍しいことだった。",
+		   NULL,"И очень необычно видеть её слушающей с таким вниманием.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　鷹野さんは、ちょこんと僕の脇に座ると、…僕が手に持っているカメラをいじる仕草をする。",
+		   NULL,"Присев рядышком, Такано-сан... потянулась к фотокамере у меня в руках.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…僕の演説でどの程度の感銘を受けてくれたかはわからないけれど、カメラというものに、多少の関心を持ってはくれたように見えた。",
+		   NULL,"...Не знаю, какое впечатление произвела моя речь, но фотоаппараты её, вижу, несколько заинтересовали.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　半ば、馬鹿にされることを覚悟していたので、彼女のそんな素直な仕草が、何だかちょっぴり嬉しかった。",
+		   NULL,"Уже почти готовившийся к насмешкам, я обрадовался её искреннему интересу.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800023", 128, TRUE);
+	OutputLine(NULL, "「ちょっと試してみるかい？」",
+		   NULL,"\"Хотите попробовать?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900015", 128, TRUE);
+	OutputLine(NULL, "「………私にもできるかしら。」",
+		   NULL,"\".........А у меня получится?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s20/08/440800024", 128, TRUE);
+	OutputLine(NULL, "「簡単だよ！",
+		   NULL,"\"Да это легко!", Line_Continue);
+	OutputLine(NULL, "　最初は、ピントの合わせ方とシャッターの押し方だけ覚えれば充分さ。",
+		   NULL," На первых порах достаточно уметь наводиться да щёлкать затвором.", Line_Continue);
+	OutputLine(NULL, "持ってごらん？",
+		   NULL," Возьмите, что ли?", Line_Continue);
+	OutputLine(NULL, "　あぁ、レンズには絶対に触れちゃ駄目だよ…！」",
+		   NULL," Ах, линзу нельзя трогать ни в коем случае!..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900016", 128, TRUE);
+	OutputLine(NULL, "「ぶう。",
+		   NULL,"\"Фу,", Line_Continue);
+	OutputLine(NULL, "簡単じゃないじゃない。",
+		   NULL," а вы говорили, легко.", Line_Continue);
+	OutputLine(NULL, "……くすくす。」",
+		   NULL," ...Хи-хи.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　せっかくカメラに関心を持ってもらえたのだから、彼女と一緒に被写体を求めて雛見沢の雄大な自然の中を散策できたら最高だったのだけれど。",
+		   NULL,"Так как у неё наконец проклюнулось любопытство к фотографии, сейчас было бы самое то побродить по величественной хинамидзавской природе в поисках подходящих кадров.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……意地悪にも、雨は一向に止みそうな気配がない。",
+		   NULL,"......Увы, дождь, как видно, вовсе не собирался заканчиваться.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 300, FALSE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも彼女はとても面白がってくれて、この雨の中の小屋の中で、色々と目に留めてはフィルムに収めていた。",
+		   NULL,"Однако новое занятие всё равно пришлось очень ей по душе, и всё под навесом автобусной остановки, на чём останавливался её взгляд, попадало на плёнку.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、彼女が撮った初めての写真は、全てこの薄暗い小屋の中の、妙なものばかりなのだ。",
+		   NULL,"Поэтому первые снимки её представляли собой исключительно непонятные фотографии всего, что та нашла в полутьме навеса.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それ以来。",
+		   NULL,"С тех самых пор", Line_WaitForInput);
+	OutputLine(NULL, "…僕と彼女は、再会する度に、村の中をカメラ片手に散策している。",
+		   NULL," при любой встрече мы бродили вдвоём по селу, не выпуская из рук фотокамер.", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

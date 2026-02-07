@@ -1,0 +1,867 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "text/54", 1000 );
+
+	PlayBGM( 1, "semi_r", 120, 0 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 1000 );
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 150 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 150 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_chisibuki", 128, 64 );
+	DrawScene( "toketu1c", 100 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1001", 128, TRUE);
+	OutputLine(NULL, "「…はぁ…はぁ、",
+		   NULL,"\"...Фух... фу-у", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 400 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……はぁ、",
+		   NULL,"...... уф...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 400 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……はぁ…！」",
+		   NULL,"... ф-фух!..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1002", 128, TRUE);
+	OutputLine(NULL, "「………くそったれ、……やべぇよ、やべぇよ…。",
+		   NULL,"\".........Пиздец...... вот это вляпались, ой, блядь...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1003", 128, TRUE);
+	OutputLine(NULL, "…監督…？",
+		   NULL," ...Начальник?..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1004", 128, TRUE);
+	OutputLine(NULL, "　監督、……返事してくださいよ。",
+		   NULL," Ну же, бригадир...... скажите чего-нибудь.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1005", 128, TRUE);
+	OutputLine(NULL, "……監督ぅ………。」",
+		   NULL," ......Начальни-ик.........\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1001", 128, TRUE);
+	OutputLine(NULL, "「ぁ、……あほんだらぁ…。",
+		   NULL,"\"Н...... ну дебил...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1002", 128, TRUE);
+	OutputLine(NULL, "し、死んでるに決まってンだろが…！」",
+		   NULL," Т-ты что, не видишь — он мёртв!..\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE( 0, "wa_003", 100, 64 );
+	DrawScene( "background/moon", 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　がらん。",
+		   NULL,"«Бах».", Line_WaitForInput);
+	OutputLine(NULL, "……大きな音がして、全員は我に帰ったようにはっとした。",
+		   NULL," ......Грохот вывел всех из оцепенения.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　誰かが、手に持っていたシャベルを落としたのだ。",
+		   NULL,"Кто-то выронил лопату.", Line_WaitForInput);
+	OutputLine(NULL, "…そのシャベルの先端は、どす黒い血がべったりと染み付いている…。",
+		   NULL," Её лезвие измазала тёмная кровь...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや、それはシャベルだけにではない。",
+		   NULL,"Нет, не только лопату.", Line_WaitForInput);
+	OutputLine(NULL, "…その場にいる６人の作業員風の男たち全員の衣服にも染み付いていた。",
+		   NULL," Кровь изляпала одежду всех шестерых человек, находившихся в помещении, — на вид строителей.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　一人が、監督と呼び声をかける先には、全身血塗れでぴくりとも動かない無残な死体が転がっていた…。",
+		   NULL,"Перед одним, взывавшим к «начальнику», лежал на полу недвижимый труп — изуродованный, весь в крови...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1001", 128, TRUE);
+	OutputLine(NULL, "「…監督ぅ……、",
+		   NULL,"\"...Начальни-ик......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……監督ぅ……、",
+		   NULL,"... ну, начальник......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2700 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "うううぅ…！」",
+		   NULL," о-о-о-о!..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1006", 128, TRUE);
+	OutputLine(NULL, "「やっかましい…！",
+		   NULL,"\"Да заткнись ты!..", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1007", 128, TRUE);
+	OutputLine(NULL, "　死んでるに決まってンだろ！",
+		   NULL," Сдох он уже, не видишь?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1008", 128, TRUE);
+	OutputLine(NULL, "　…仕方ねぇじゃねぇか！",
+		   NULL," Чё нам ещё оставалось?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1009", 128, TRUE);
+	OutputLine(NULL, "　正当防衛だろ、正当防衛…！！」",
+		   NULL," Мы защищались, да, защищались!!...\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　喧嘩の原因は、自分たちが事務所内でビールを開けているのを監督に咎められたからだ。",
+		   NULL,"Драка началась из-за того, что начальник вспылил по поводу распития ими пива в конторе.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あちこちに飲酒禁止だの喫煙禁止だのと標語をべたべた貼りつけていた。",
+		   NULL,"Здесь повсюду расклеены назойливые плакаты: «Распитие спиртных напитков запрещено» — там, «Курение запрещено» — тут.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのルールを破る者には容赦のない雷が落ちたのだ。",
+		   NULL,"На того, кто смел нарушать правила, метались не знающие пощады громы и молнии.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かにルールを破ったのは彼ら６人が悪い。",
+		   NULL,"Да, они сами виноваты — нарушали.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、住民運動の敵意に日々晒され、ストレスが限界まで溜まっていたからなのだ。",
+		   NULL,"Но ведь тут света не взвидишь, когда тебе каждый день местные работать не дают.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だからつい監督を挑発するようなことを言ってしまった。",
+		   NULL,"...Вот и бросил кто-то начальнику наглый, вызывающий ответ.", Line_WaitForInput);
+	OutputLine(NULL, "表に出やがれ、と。",
+		   NULL," Пошёл, мол, отсюда.", Line_WaitForInput);
+	OutputLine(NULL, "他の人間も、やれやれと囃し立てた。",
+		   NULL," А остальные дружно поддержали.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 3, "kaze", 120, 0 );
+
+	DrawScene( "background/aka2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　辛いばかりの工事で面白いことなど何もない。",
+		   NULL,"На стройке один тяжёлый труд, развлечений не сыщешь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、つい喧嘩を囃し立てるように言ってしまったのだ。",
+		   NULL,"Вот поэтому они завязали потасовку — чтобы развеяться.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　せいぜい罵りあいか取っ組み合い程度を期待していた。",
+		   NULL,"Думали, ограничится руганью или там небольшой драчкой.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、次第にそれはエスカレートしてきた。",
+		   NULL,"Но понемногу обстановка накалилась.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや、…厳密には監督が異様に感情を爆発させだしたのだ。",
+		   NULL,"Нет... по правде говоря, бригадир пришёл в неожиданное исступление.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……監督だって普段、住民のやかましい運動の矢面に立たされている。",
+		   NULL,"......Ему самому приходилось сносить адский шум выступлений местных.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　自分たちがストレスを溜めているように、…監督だってストレスが溜まってても当然なのだ。",
+		   NULL,"Ничего удивительного, что нервы производителя работ натянулись до предела, как их собственные.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/aka1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、…それでも常軌を逸していた。",
+		   NULL,"Но... что ни говори, а вёл он себя не как нормальный.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　監督は初め、確かにシラフだったはずだ。",
+		   NULL,"Вначале бригадир точно был трезв...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……でもどんどんおかしくなっていって錯乱状態になり、",
+		   NULL,"Но постепенно зверел, выходя из себя,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それはまるで人が変わったようで、",
+		   NULL," словно сходил с ума...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…いや、",
+		   NULL," нет...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…まるで何か“悪いモノ”にでも取り憑かれたかのようで…。",
+		   NULL," словно бы «нечто злое» вселилось в него...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　後で囃し立てていた彼らでも、その異常な様子に酔いが抜けてしまったほどだった…。",
+		   NULL,"Даже рабочие, подзадоривавшие начальника, вмиг протрезвели при виде этого...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして……。",
+		   NULL,"А потом......", Line_WaitForInput);
+	OutputLine(NULL, "監督はいきなり傍らのシャベルを拾い上げると、何の躊躇もなく口喧嘩の相手の頭を叩き割ろうとしたのだ。",
+		   NULL," бригадир внезапно схватил случившуюся рядом лопату и тут же попытался вышибить своему противнику мозги.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…咄嗟に、転ぶように避けたから脳天で食らわずに済んだが、もし避け損なっていたら、絶対に頭をカチ割られていた。",
+		   NULL,"Тот, чудом успев упасть на пол, избежал расколотого черепа, но лопата непременно проломила бы ему голову, не отличись строитель хорошей реакцией.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_furu", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 300 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_tataku", 128, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、転がりながら避ける男に対し、何の躊躇もなくシャベルを何度も打ちつけた。",
+		   NULL,"Тогда бригадир начал остервенело бить лопатой по упавшему.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それを男は必死に転がりながら逃げる。",
+		   NULL,"Тот лихорадочно катался по полу, стараясь увернуться от ударов.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……この頃には喧嘩の次元を越えていることに気付き、囃し立てていた男たちは取り押さえに行った。",
+		   NULL,"......Здесь остальные поняли, что это уже никакая не драка, и попытались скрутить распорядителя работ.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 0, "s_furu", 128, 64 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、監督はその男たちに対し、シャベルを振り上げたのだ。",
+		   NULL,"Но тот набросился с лопатой на них.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　振り上げられた男は、それを腕でバツを作るような形で防ごうとした。",
+		   NULL,"Человек, ставший его мишенью, попытался остановить удар, скрестив руки над головой.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……縦に振り下ろされるシャベルを腕で防げるわけがない。",
+		   NULL,"......Но разве ж остановят руки удар сверху вниз.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	PlaySE( 0, "s_chisibuki", 128, 64 );
+	DrawScene( "background/ryuuketu1", 100 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鮮血がほとばしり、苦痛のうめき声が漏れ出した。",
+		   NULL," Брызнула кровь, и человек взвыл от боли.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 3, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "B08_Izyou", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この頃には誰もが理屈抜きで直感していた。",
+		   NULL,"Вот здесь все поняли животным чутьём:", Line_WaitForInput);
+	OutputLine(NULL, "…監督は普通じゃない。",
+		   NULL," бригадир не в себе.", Line_WaitForInput);
+	OutputLine(NULL, "今の監督には何の手加減もなく、…もしこちらが防いだり避けたりしないなら、容赦なく脳天を割ってくる…！",
+		   NULL," Нынешний бригадир без малейшего угрызения совести, без пощады размозжит им головы, пропусти только удар!..", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/aka2", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　シャベルを持つ相手に対抗するには、…いや、シャベルの攻撃を防ぐにはこちらも何か持たなくてはならない。",
+		   NULL,"Чтобы противостоять ему, вооружённому лопатой... нет, чтобы отбить удар лопаты, им требовалось вооружиться самим.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　隙を見て一人が大型ハンマーを手に取った。",
+		   NULL,"Один сцапал кувалду, попавшуюся на глаза.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…それを見て、他の人間たちも皆、得物を手にするべきだと気が付いた。",
+		   NULL,"Поглядев на него, другие дружно сообразили, что им нельзя без оружия.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今の監督を取り押さえるには、得物が不可欠だと自然に思った…！",
+		   NULL,"Мысль, что без оружия с начальником не совладать, была совершенно в порядке вещей!..", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	DrawScene( "background/ryuuketu1", 400 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1002", 128, TRUE);
+	OutputLine(NULL, "「……こんなつもりじゃなかったのにぃ…。",
+		   NULL,"\"......Так не должно было выйти...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1003", 128, TRUE);
+	OutputLine(NULL, "…ぅわぁぁぁぁぁ…。」",
+		   NULL," Уаа-а-а-а-а...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　監督の狂気が６人に感染するのは時間の問題だった。",
+		   NULL,"Рано ли, поздно ли, но строители не могли не заразиться безумием своего начальника.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そして、取り押さえが、いつの間にかリンチにすり替わるのだって、時間の問題だった。",
+		   NULL,"И рано ли, поздно ли, но и сама цель скрутить его не могла не преобразиться в жажду расправы.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　気付けば監督は血塗れの肉塊だった。",
+		   NULL,"Глядь — а от начальника уж остался окровавленный кусок мяса.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…顔面は腫れ上がり、肉や皮が削げ、頭蓋骨が覗いているのがわかった。",
+		   NULL,"Лицо — всё распухшее, во рваных клочьях кожи да мышц, даже череп виднелся местами.", Line_WaitForInput);
+	OutputLine(NULL, "…誰もが、すでに絶命していることを悟った…。",
+		   NULL," До всех дошло: их начальник мёртв...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1010", 128, TRUE);
+	OutputLine(NULL, "「ふ、ふざけんじゃねぇよ…！！",
+		   NULL,"\"Д-да и хер с ним!!...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1011", 128, TRUE);
+	OutputLine(NULL, "　俺たちは殺されかかったんだぞ！",
+		   NULL," Он нас чуть не убил!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1012", 128, TRUE);
+	OutputLine(NULL, "　こいつが襲い掛かってこなけりゃ、俺たちだって反撃しなかったんだぞ！！",
+		   NULL," Не набросился бы, и нам бы не пришлось защищаться!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1013", 128, TRUE);
+	OutputLine(NULL, "　なぁ？！」",
+		   NULL," Так?!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　６人のリーダー格の、一番最初に口喧嘩を買った男が仲間に同意を求めるが、誰もが青ざめていて、返事をしたりはしなかった…。",
+		   NULL,"Предводитель шестёрки, больше всех напрашивавшийся на драку, пытался убедить товарищей в их правоте, однако те, бледные, не отвечали...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それが、…男には面白くなかったのかもしれない。",
+		   NULL,"Должно быть, ему это не понравилось.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…自分が喧嘩を売った。",
+		   NULL,"Он драку начал.", Line_WaitForInput);
+	OutputLine(NULL, "他の仲間たちは後から加わったに過ぎない。",
+		   NULL," Остальные всего лишь присоединились.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……自分が主犯扱いなのだ。",
+		   NULL,"...Его и назначат главным виновником.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからこそ、自分をトカゲの尻尾のように見られているかもしれないことに耐えられなかったのかもしれない…。",
+		   NULL,"Вот почему он, верно, подозревал, что на него свалят большую часть вины, и очень этого не хотел...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1014", 128, TRUE);
+	OutputLine(NULL, "「い、いつまでもナヨナヨしてんじゃねぇ…！！",
+		   NULL,"\"Н-ну вы долго тут сопли распускать вздумали?!...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1015", 128, TRUE);
+	OutputLine(NULL, "　仕方ねぇだろ！",
+		   NULL," Ничё уже не поделать!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1016", 128, TRUE);
+	OutputLine(NULL, "　殺ッちまったもんは仕方ねぇだろ！！",
+		   NULL," Убили — ну и всё терь, ничё не попишешь!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1017", 128, TRUE);
+	OutputLine(NULL, "　俺たちゃな、もう殺人犯なんだよ！！",
+		   NULL," Мы тут все терь убийцы!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1018", 128, TRUE);
+	OutputLine(NULL, "　覚悟を決めるんだよ！」",
+		   NULL," Вот и соберитесь, блядь, с мыслями!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1004", 128, TRUE);
+	OutputLine(NULL, "「まさかおめぇら、自首して懲役食らいてぇなんて思ってんじゃねぇだろな？！",
+		   NULL," Вы, конечно, не думаете сдаться с повинной и загреметь в тюрьму?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1005", 128, TRUE);
+	OutputLine(NULL, "　冗談じゃねぇよ！！",
+		   NULL," Да хер там!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1006", 128, TRUE);
+	OutputLine(NULL, "　ムショなんかこの年で行ってられっかよ！！」",
+		   NULL," В таком возрасте я в тюрьму не пойду!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1019", 128, TRUE);
+	OutputLine(NULL, "「隠すんだよ！",
+		   NULL," Мы спрячем его, вот чё!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1020", 128, TRUE);
+	OutputLine(NULL, "　こいつの死体を隠してスッとぼけるしかねぇんだッ！！」",
+		   NULL," Спрячем труп и сделаем вид, что ничё не зна-м, ничё не слыхали, — а чё нам ещё остаётся!!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 400, FALSE );
+	DrawScene( "background/aka1", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……その男が、実は過去に暴行事件で執行猶予判決を受けていることを、何人かは知っていた。",
+		   NULL,"......Некоторые из них знали, что вожак в своё время успел получить испытательный срок за нападение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、…もし警察沙汰になれば、罪はこの件だけでは済まないのだ。",
+		   NULL,"Так что, попадись он правосудию снова, за рецидив накажут куда серьёзнее.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからこそ、…顔を真っ赤にして、何とかこの状況から逃れようと喚きたてているのだ。",
+		   NULL,"Вот почему он, побагровев, разорялся, пытаясь найти какой-нибудь выход.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…もし、この場にいたのが監督と男だけだったなら、彼はこうまで息巻く必要はなかった。",
+		   NULL,"Будь он здесь наедине с бригадиром, было бы незачем столько шуметь.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…ただ冷静に、監督の死体を隠してとぼけるだけで良かったのだ。",
+		   NULL,"Хладнокровно запрятал бы труп и прикинулся ничего не знающим.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、ここには彼も含めて６人いる。",
+		   NULL,"Но в живых-то тут шестеро, включая его.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　共犯という名の目撃者がいるのだ。",
+		   NULL,"Все они не только соучастники, но и свидетели.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この内の誰かひとりでも良心の呵責に負けて自首なんかしたら、それは自分にも及んでしまうのだ…。",
+		   NULL,"Если хотя бы один явится с повинной, не выдержав угрызений совести, то подведёт не только себя...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/y_damu2", 400 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1003", 128, TRUE);
+	OutputLine(NULL, "「で、……でも、",
+		   NULL,"\"Н...... но...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 500 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…死体なんか隠したって、",
+		   NULL," пусть мы и спрячем тело...", Line_Continue);
+	OutputLine(NULL, "…バレるよ、いずれ…。」",
+		   NULL," всё равно ж ведь найдут...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1004", 128, TRUE);
+	OutputLine(NULL, "「それより…、正当防衛ってことでちゃんと主張して…、",
+		   NULL,"\"Лучше... твердить, что мы защищались...", Line_Continue);
+	OutputLine(NULL, "その、過剰防衛くらいで勘弁してもらぇねぇかな……。」",
+		   NULL," может, отделаемся только превышением пределов самообороны...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1021", 128, TRUE);
+	OutputLine(NULL, "「甘ったれたこと言ってんじゃねぇ！！",
+		   NULL,"\"Да что ты говоришь!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1022", 128, TRUE);
+	OutputLine(NULL, "　これだけズタボロに殺しちまってンだぞ！！",
+		   NULL," Ты хоть, блядь, посмотри, чё с ним стало!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1023", 128, TRUE);
+	OutputLine(NULL, "　過剰防衛で済むかよ？！",
+		   NULL," Думаешь, спишут на превышение самообороны?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1024", 128, TRUE);
+	OutputLine(NULL, "　親が見たって見分けがつかねぇくれえに殺っちまってんだぞ馬鹿野郎ッ！！！」",
+		   NULL," Да его родители собственные не узнают, ослиная жопа!!!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1007", 128, TRUE);
+	OutputLine(NULL, "「で、…でもよぅ…、どう隠したって、監督がいなくなったのは明日の朝にはバレちまうんだ。",
+		   NULL,"\"Н... но ведь... как ни прячь, а завтра же утром раскроется, что начальник пропал.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1008", 128, TRUE);
+	OutputLine(NULL, "どうしようもねぇよ……！」",
+		   NULL," Всё бесполезно!.....\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1025", 128, TRUE);
+	OutputLine(NULL, "「どうしようもねぇのは、おんどれの頭じゃいボケぇッ！！！」",
+		   NULL,"\"Что бесполезно, так это твоя безмозглая голова, кретин!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　弱音を吐く男の頬を張り倒す。",
+		   NULL,"Он залепил пощёчину нытику.", Line_WaitForInput);
+	OutputLine(NULL, "……いつの間にか、リーダー格の男の形相は鬼のようになっていた…。",
+		   NULL," ......Лицо старшего когда-то успело стать лицом демона...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/aka1", 400 );
+
+	PlayBGM( 3, "semi_r", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1026", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「いいかボケども？！",
+		   NULL,"\"Слышьте, болваны!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1027", 128, TRUE);
+	OutputLine(NULL, "　俺たちゃな、殺人犯なんだ殺人犯！！",
+		   NULL," Мы — убийцы, ясно вам?! УБИЙЦЫ!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1028", 128, TRUE);
+	OutputLine(NULL, "　グズグズ言ってりゃ、５年６年食らい込まれちまうんだよッ！！",
+		   NULL," Будете канителиться, загремите на пять, на шесть лет за решётку как пить дать!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1029", 128, TRUE);
+	OutputLine(NULL, "　俺らン中にひとり裏切り者がおってみろ！！",
+		   NULL," Хоть одна блядь проболтается", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1030", 128, TRUE);
+	OutputLine(NULL, "　全員が捕まっちまうんだよッ！！",
+		   NULL," — ВСЕХ словят!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1031", 128, TRUE);
+	OutputLine(NULL, "　懲役を舐めんな？",
+		   NULL," И не думайте, будто за решёткой легко работать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1032", 128, TRUE);
+	OutputLine(NULL, "　どうせ捕まる覚悟だっちゅうんなら、死ぬ気で逃げまくってやるんだ！！",
+		   NULL," Ежли знаете, что всё равно поймают, ну так бегите, словно вам чёрт в пятки дышит!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1033", 128, TRUE);
+	OutputLine(NULL, "　年貢の納め時になったら好きなだけ覚悟決めりゃええんだ！！」",
+		   NULL," Как придёт пора отвечать, тогда и будете умывать ручки!!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どんどん……、男の形相が鬼のようになっていく。",
+		   NULL,"Его лицо всё больше... напоминало злобный оскал демона.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、ついさっきまで監督が浮かべていた表情でもある。",
+		   NULL,"Точь-в-точь как лицо начальника несколькими минутами ранее.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……何かに取り憑かれたように豹変した監督と、同じものが彼に取り憑いたのではないか……。",
+		   NULL,"......Уж не вселилась ли в него та же дрянь, что, казалось, подчинила начальника?.....", Line_WaitForInput);
+	OutputLine(NULL, "彼らは本気でそう思った。",
+		   NULL," Остальные пятеро всерьёз о том задумались.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　思えば、…その表情はデモ活動で吼え猛るこの村の住民たちと同じ形相なのだ。",
+		   NULL,"К слову сказать... такое же выражение носили на лицах деревенские, бесновавшиеся на выступлениях перед стройплощадкой.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この村の本当の名前は鬼ヶ淵村なのだという。",
+		   NULL,"Говорят, настоящее название деревни — Онигафути.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、そこには凶悪な鬼が住んでいたといい、人に乗り移ることもあるのだと。",
+		   NULL,"А ещё здесь, говорят, жили злобные демоны, временами вселявшиеся в людей.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……デモ隊がうそぶくそんな話を、今は本気で思い出していた…。",
+		   NULL,"......Сейчас им как никогда живо вспомнились горделивые россказни протестующих...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この形相がさらに行き着いた時、…監督はシャベルを振りかざして殺意を剥き出しにした。",
+		   NULL,"Как раз когда его лицо исказилось ещё сильнее, начальник схватился за лопату, желая крови.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………目の前の男もそうならない保証などないのだ。",
+		   NULL,".........Никто не поручится, что человек перед ними не последует его стопами.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　実際、彼は得物のハンマーを握り締めたまま、ぎょろぎょろと睨みつけて威圧してくる。",
+		   NULL,"Надо сказать, он по-прежнему сжимал рукоять кувалды, недобро поглядывая на остальных.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……もし、誰かが一言、自首しようと口にしたなら。",
+		   NULL,"......Если хоть кто-нибудь заикнётся о сдаче,", Line_WaitForInput);
+	OutputLine(NULL, "…多分、その男の頭を一撃で叩き割るだろう…。",
+		   NULL," он, должно быть, одним ударом проломит дерзкую голову...", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1034", 128, TRUE);
+	OutputLine(NULL, "「…そうだ。",
+		   NULL,"\"...Точно.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1035", 128, TRUE);
+	OutputLine(NULL, "…………裏切り者を出さんためにな。",
+		   NULL," .........У меня появилась замечательная мыслишка,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1036", 128, TRUE);
+	OutputLine(NULL, "いいこと思いついたわ。",
+		   NULL," как не допустить предательства.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1037", 128, TRUE);
+	OutputLine(NULL, "…へっへっへ。",
+		   NULL," Хе-хе-хе.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1038", 128, TRUE);
+	OutputLine(NULL, "死体も隠しやすくなって一石二鳥だぞ…。」",
+		   NULL," Заодно и труп спрятать легче...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1005", 128, TRUE);
+	OutputLine(NULL, "「ど、…………どんな手だい…。」",
+		   NULL,"\"И......... и как же?..\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/moon", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1039", 128, TRUE);
+	OutputLine(NULL, "「へっへっへ…。",
+		   NULL,"\"Хе-хе-хе...", Line_WaitForInput);
+	OutputLine(NULL, "この野郎の死体をな。",
+		   NULL," Вон, видишь, дохлый говнюк лежит?.....", Line_WaitForInput);
+	OutputLine(NULL, "………みんなで仲良く、この人数で割り算するんだ。」",
+		   NULL," ...Мы по-дружески разделим его между собой.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyouc1009", 128, TRUE);
+	OutputLine(NULL, "「そ、……そりゃあ……、」",
+		   NULL,"\"Т...... ты чего......\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなのはまずいよ、と反論したかった。",
+		   NULL,"«Нельзя ж так», — собирались сказать они.", Line_WaitForInput);
+	OutputLine(NULL, "殺しただけでも重罪だ。",
+		   NULL," Убийство само по себе серьёзное преступление.", Line_WaitForInput);
+	OutputLine(NULL, "…その上に遺体損壊までやるなんて、いくら何でもやり過ぎだ…。",
+		   NULL," Предлагать отягчить его уродованием останков — что ни говори, а это уж слишком...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、反論したらこの場で殴り殺しかねない雰囲気だった…。",
+		   NULL,"...Но все пятеро шкурой чуяли, что попробуй возразить — и ты можешь стать следующим...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、それ以上の言葉を喉から出すことはできなかった…。",
+		   NULL,"А потому ни из чьей глотки не вырвалось единого слова...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「全員でバラすんだ。",
+		   NULL,"\"Мы его разделаем, все вместе.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1043", 128, TRUE);
+	OutputLine(NULL, "この野郎が日頃言ってンだろ。",
+		   NULL," Помните, чё этот сукин сын каждый день повторял?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1044", 128, TRUE);
+	OutputLine(NULL, "共同作業だよ。",
+		   NULL," РАБОТАЙ В КОМАНДЕ, вот так-то.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1045", 128, TRUE);
+	OutputLine(NULL, "全員、共犯だ。",
+		   NULL," Мы все — соучастники.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1046", 128, TRUE);
+	OutputLine(NULL, "それで、バラした部品は各自が責任を持って隠すんだ。",
+		   NULL," И каждый возьмёт себе по кусочку и спрячет сам.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1047", 128, TRUE);
+	OutputLine(NULL, "………な？",
+		   NULL," .........Ну как?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1048", 128, TRUE);
+	OutputLine(NULL, "　これなら全員仲良く主犯だろ？",
+		   NULL," Так мы все прикроем друг друга, как равные по вине, ага?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1049", 128, TRUE);
+	OutputLine(NULL, "　へっへっへ、自分だけ罪が軽いから自首しようなんてズル抜けは許さねぇってわけさ。",
+		   NULL," Хе-хе-хе, чёрта с два тогда кто-нибудь сдастся, чтобы получить меньший срок.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoua1050", 128, TRUE);
+	OutputLine(NULL, "…へへへへへへ！」",
+		   NULL," Хе-хе-хе-хе-хе-хе!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>作業員</color>", NULL, "<color=#f5e6d3>Рабочий</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_sagyoub1006", 128, TRUE);
+	OutputLine(NULL, "「……ぅ………………。」",
+		   NULL,"\"......Ух...............\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　５人は、もうその鬼気迫る形相に完全に飲み込まれ、",
+		   NULL,"Пятеро не нашли в себе сил сопротивляться его уже полностью демоническому оскалу......", Line_WaitForInput);
+	OutputLine(NULL, "……鬼ヶ淵村を支配する鬼の真の恐怖が背中を這い上がってくるのを、ぞわぞわと感じているのだった………。",
+		   NULL," чувствуя, как по их спинам пополз настоящий ужас перед царствующими в Онигафути демонами.........", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}

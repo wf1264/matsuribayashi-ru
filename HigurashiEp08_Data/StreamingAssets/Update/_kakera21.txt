@@ -1,0 +1,1081 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	DrawScene( "background/tk_ryou1", 400 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1001", 128, TRUE);
+	OutputLine(NULL, "「やぁ、中川くん！",
+		   NULL,"\"Эй, Накагава-кун!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1002", 128, TRUE);
+	OutputLine(NULL, "　ずいぶんの久方ぶりになるね。",
+		   NULL," Сколько лет-то не виделись.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1003", 128, TRUE);
+	OutputLine(NULL, "最近はやってるのかい？",
+		   NULL," Ты как, занимался этим в последнее время?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1004", 128, TRUE);
+	OutputLine(NULL, "　アレ。",
+		   NULL," Ну, ЭТИМ.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1005", 128, TRUE);
+	OutputLine(NULL, "わっはははははは。」",
+		   NULL," Уах-ха-ха-ха-ха-ха-ха.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1001", 128, TRUE);
+	OutputLine(NULL, "「いえいえ、もうさっぱりです。",
+		   NULL,"\"Нет-нет, вообще перестал.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1002", 128, TRUE);
+	OutputLine(NULL, "歳は取りたくないもんですなぁ。」",
+		   NULL," Не нравится мне стареть.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1006", 128, TRUE);
+	OutputLine(NULL, "「クレイやる時は集中してやらないとダメだよ。",
+		   NULL,"\"По тарелочкам плотно работать надо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1007", 128, TRUE);
+	OutputLine(NULL, "あんまり間を空けすぎると勘が鈍っちゃって意味ない意味ない！」",
+		   NULL," С долгими передышками руку не набьёшь, а какой тогда прок!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1003", 128, TRUE);
+	OutputLine(NULL, "「先生、ご紹介します。",
+		   NULL,"\"Сэнсэй, позвольте представить.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1004", 128, TRUE);
+	OutputLine(NULL, "鷹野三佐です。」",
+		   NULL," Майор Такано.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1054", 128, TRUE);
+	OutputLine(NULL, "「初めまして。",
+		   NULL,"\"Рада знакомству.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1055", 128, TRUE);
+	OutputLine(NULL, "本日はお忙しい中、お時間をお割きくださいまして、ありがとうございます。」",
+		   NULL," Большое спасибо, что нашли время на встречу.\"", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1008", 128, TRUE);
+	OutputLine(NULL, "「あぁ、別に君のために時間を割いたわけじゃない。",
+		   NULL,"\"Ай, да ладно, какое мне до тебя дело.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1009", 128, TRUE);
+	OutputLine(NULL, "うまい生ウニが食わせてもらえるって話でねぇ！",
+		   NULL," Меня пообещали угостить отборнейшими морскими ежами!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1010", 128, TRUE);
+	OutputLine(NULL, "　ウニはいいんだよ君、ビタミンＡが豊富でね、お肌に特にいいんだとか。",
+		   NULL," Прекрасное блюдо, знаешь, — богато витамином А и вроде как особенно хорошо действует на кожу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1011", 128, TRUE);
+	OutputLine(NULL, "女性は大好きでしょ、ウニ！",
+		   NULL," Женщины их небось любят, ежей-то!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1012", 128, TRUE);
+	OutputLine(NULL, "　わっはははははは！」",
+		   NULL," Уах-ха-ха-ха-ха-ха-ха!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ウニにビタミンＡが豊富なのは認めるが、それでもほうれん草なんかに比べたら騒ぐほどではない。",
+		   NULL,"Морские ежи действительно богаты витамином А, но всё-таки, например, шпинату и в подмётки не годятся.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……いや、そんなことはどうでもいいか。",
+		   NULL,"......Впрочем, кому какая разница.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…何となく不快そうな男だったので、揚げ足が取りたくなっただけだ。",
+		   NULL,"...Просто неприятный он какой-то, вот и захотелось придраться.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日の男たちは、入江機関の予算を握っている、アルファベットプロジェクトの理事。",
+		   NULL,"Сегодня на встрече присутствовали директора проекта Алфавит.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もしくはその理事に意見できる立場の人間たち。",
+		   NULL,"Или те, кто мог сообщать им своё мнение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…早い話が、入江機関の新しい飼い主たちだ。",
+		   NULL,"...Короче говоря, новые хозяева Института Ириэ.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だが、それ以上に、小泉のおじいちゃんほどではないにしても、各界の重鎮たちや黒幕たちでもある。",
+		   NULL,"......Но, что важнее, они — высокопоставленные фигуры и кукловоды в различных областях, пусть и не такого масштаба, как дедушка Коидзуми.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　粗相のないよう気をつけなくてはならない…。",
+		   NULL,"Перед ними нельзя ударить лицом в грязь...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな相手だから、私ごときが彼らを呼びつけることなどできるはずもない。",
+		   NULL,"Я и помыслить не могу о том, чтобы созвать подобных людей на встречу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　かつての小泉派のツテを使って、何とかこの機会を設けてもらったのだった。",
+		   NULL,"Я добилась её, использовав связи в бывшем лагере Коидзуми.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　かつて、何から何まで私の思い通りになるよう、尽力してくれた小泉のおじいちゃんはもういない。",
+		   NULL,"Дедушки Коидзуми, когда-то помогавшего, чтобы всё выходило по-моему, больше нет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……ここからは、本当の意味で私ひとりで切り拓いていかなくてはならないのだ。",
+		   NULL,"......Отныне я в подлинном смысле слова сама должна пробивать себе путь.", Line_Normal);
+	ClearMessage();
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、今日とて私の独り舞台ではない。",
+		   NULL,"Однако ж сегодня не мне одной выступать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日の場を設けてくれた人たちの顔を潰すことはできないので、私の出番が与えられるまで、じっとお酌して待っているしかない。",
+		   NULL,"Я не вправе пятнать честь людей, предоставивших мне эту возможность, поэтому должна терпеливо ждать своей очереди, пока они напиваются.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今日の私の最大の目的は、雛見沢症候群がどれだけ優れた研究対象であることかを説明し、研究の無期延長を求めるためだ。",
+		   NULL,"Моя главная цель на сегодня — разъяснить, насколько великолепен синдром Хинамидзавы в качестве предмета исследования, и добиться продления работ на неопределённый срок.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼らはカネのことしか見えていないから、雛見沢症候群がどれだけのポテンシャルを秘めるかわかっていない。",
+		   NULL,"Они не видят ничего, кроме денег, из-за чего не понимают, какие плоды может принести Хинамидзавский синдром.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それだけの高額な研究費を費やすべきものだとわかっていない。",
+		   NULL,"Не понимают, сколь щедрого финансирования достойно его исследование.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この研究は単なる未知の寄生虫の存在だけに限らず、さらに人類学の常識すら覆しかねない。",
+		   NULL,"Оно не только затрагивает каких-то там неизученных паразитов, но и может перевернуть с ног на голову современные представления о природе человека.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ノーベル賞だって讃えきれないほどのものなのだ。",
+		   NULL,"За такое мало даже Нобелевской премии.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それを無学な彼らに説明するのは難しいかもしれないが、やらなければならない。",
+		   NULL,"......Возможно, добиться от невежд понимания будет трудно, но я должна попробовать.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのために、素人を煙に巻くことがないよう、わかりやすい資料を今日まで相当の時間をかけて作り上げてきた。",
+		   NULL,"Ради того я потратила немало часов, составляя доходчивые статьи, в которых разобрался бы даже несведущий.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私たちは無知との接触を嫌うため、時にわざと煙に巻く資料を作ることがあるが、今回はそうではいけない。",
+		   NULL,"......Недолюбливая невежд, иногда мы нарочно пишем запутанные бумаги, но только не на сей раз.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼らを見下さず、真の意味で理解を求めなくてはいけないのだから。",
+		   NULL,"Теперь я должна добиться действительного понимания, не глядя на них свысока.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そのために、わかりやすく作った資料は相当な量になってしまった。",
+		   NULL,"Ради того я написала целую гору понятных бумаг.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…本当は、こんなのんびりと懐石料理を摘んでいる暇も惜しい。",
+		   NULL,"По правде сказать, как же томительно долго идёт поглощение гостями первоклассной японской кухни.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　早く本題に入って、彼らに理解できるよう懇切丁寧に説明したい。",
+		   NULL,"Хочется поскорее перейти ко главному и вежливо, понятно для них разъяснить суть моей просьбы.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だが、慌てる乞食はもらいが少ないという諺もある。",
+		   NULL,"......Но говорят же, что суетливому нищему дают мало,", Line_WaitForInput);
+	OutputLine(NULL, "…今はじっと伏して待つしかない。",
+		   NULL," — и пока остаётся лишь терпеливо ждать.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 1000, FALSE );
+
+	DrawScene( "black", 1000 );
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+
+	DrawSceneWithMask( "background/heya6", "maskup", 1, 0, 1300 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1013", 128, TRUE);
+	OutputLine(NULL, "「うん。",
+		   NULL,"\"Угу.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1014", 128, TRUE);
+	OutputLine(NULL, "正直ねぇ、これまでのアルファベットはあまりよくないと思うのです。",
+		   NULL," По правде сказать, прежний Алфавит не кажется мне таким уж и замечательным.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1015", 128, TRUE);
+	OutputLine(NULL, "結局こいつは、未だ頭ん中が大東亜戦争な年寄りどものね、お砂場みたいなもんだったんですな。」",
+		   NULL," В конечном счёте он оказался чем-то вроде возни в песочнице для старичья, думающего, будто мы всё воюем на Тихом океане.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1001", 128, TRUE);
+	OutputLine(NULL, "「年寄りどもが自分のじゃないカネで、大日本帝国復興の夢を描くお砂場です。",
+		   NULL," Песочнице, где старичьё на чужие деньги лепит свою мечту о возвращении Великой Японской империи.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1002", 128, TRUE);
+	OutputLine(NULL, "そんな年寄りどもの妄想のために、一体どれだけの公金が垂れ流されたやら！」",
+		   NULL," Сколько ж казённых денег потрачено на их бред!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1001", 128, TRUE);
+	OutputLine(NULL, "「聞いた話じゃ、奥野先生辺りが検察を突っついて、旧理事会を横領で追わせてるらしいですなぁ。」",
+		   NULL,"\"Как слышал, окружение Окуно-сэнсэя подгоняет прокуратуру, стараясь привлечь старый состав совета за хищение денег.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1016", 128, TRUE);
+	OutputLine(NULL, "「わっははははははは。",
+		   NULL,"\"Уах-ха-ха-ха-ха-ха-ха-ха.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1017", 128, TRUE);
+	OutputLine(NULL, "年寄りたちをヨイショしてウマイ汁を吸っていた連中の末路ですな。",
+		   NULL," И поделом — нечего угодничать перед стариками заради куска посочнее.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1018", 128, TRUE);
+	OutputLine(NULL, "もっとも、表沙汰にゃ出来んでしょうから、別件で引責、左遷といった形になるんでしょうが。",
+		   NULL," Правда, народу того не раскроешь, так что их, думаю, привлекут к ответу или понизят в должности за что-то другое.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1019", 128, TRUE);
+	OutputLine(NULL, "…いやはや、これも戦前の亡霊をずっと野放しにしていた日本のツケですな！",
+		   NULL," Эх, Япония, не держала ты призраков довоенного времени на коротком поводке, вот теперь расплачивайся!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1020", 128, TRUE);
+	OutputLine(NULL, "　いやぁ、この焼きウニの汁もたまらない！",
+		   NULL," О-ох, ну и сок у жареного ежа — пальчики оближешь!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1021", 128, TRUE);
+	OutputLine(NULL, "　うっはははははは！」",
+		   NULL," Ух-ха-ха-ха-ха-ха-ха!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1005", 128, TRUE);
+	OutputLine(NULL, "「これは手厳しい…。",
+		   NULL,"\"Мне крайне неудобно...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1006", 128, TRUE);
+	OutputLine(NULL, "そんな中で先生にこんなお願いをするのは非常〜に何ですが。",
+		   NULL," Не хочется обращаться с подобной просьбой, сэнсэй, во время трапезы...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1007", 128, TRUE);
+	OutputLine(NULL, "ひとつ、お時間を頂戴できればと思いまして…。」",
+		   NULL," Но хотел бы занять немного вашего времени...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1003", 128, TRUE);
+	OutputLine(NULL, "「えっと、入江機関さんでしたっけ？",
+		   NULL,"\"Эм-м, по поводу того Института Ириэ, кажется?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1004", 128, TRUE);
+	OutputLine(NULL, "　確か、長野だか岐阜の方で風土病の研究をされてるんでしたなぁ。",
+		   NULL," Помнится, в Нагано или там в Гифу исследуют некую местную болезнь?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1005", 128, TRUE);
+	OutputLine(NULL, "えっと、どういうことになってましたっけ？」",
+		   NULL," Э-э, и что там, не напомните?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1008", 128, TRUE);
+	OutputLine(NULL, "「理事会の決定で、軍事転用研究が中止に。",
+		   NULL,"\"Советом директоров решено прекратить работы по её военному применению.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1009", 128, TRUE);
+	OutputLine(NULL, "あと、研究そのものも三年以内に段階的終了に決定しています。",
+		   NULL," Само исследование также шаг за шагом свернут в течение трёх лет.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1010", 128, TRUE);
+	OutputLine(NULL, "…あ、いえ、これは継続協議中でした。",
+		   NULL," Ах, нет, это ещё обсуждается.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1011", 128, TRUE);
+	OutputLine(NULL, "まぁその、いずれにしましても、数年以内に閉鎖になる予定です。」",
+		   NULL," В общем, как бы то ни было, в ближайшие несколько лет проект закроют.\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1002", 128, TRUE);
+	OutputLine(NULL, "「あぁあぁ！",
+		   NULL,"\"А-а, ага!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1003", 128, TRUE);
+	OutputLine(NULL, "　思い出した思い出した。",
+		   NULL," Помню-помню.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1004", 128, TRUE);
+	OutputLine(NULL, "入江機関さんは旧理事会でも評判が悪かったみたいですなぁ。",
+		   NULL," Институт Ириэ и у старого совета директоров, по-моему, снискал дурную оценку.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1005", 128, TRUE);
+	OutputLine(NULL, "何しろ莫大な予算をほとんど無審査で吸い取ってましたからねぇ。」",
+		   NULL," Уйму средств поглощал практически без надзора.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1022", 128, TRUE);
+	OutputLine(NULL, "「某大先生がどういうわけかこのプロジェクトをやたら後押しされてたみたいでしてね。",
+		   NULL," Отчего-то кое-кто на самом верху не скупился на поддержку проекта.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1023", 128, TRUE);
+	OutputLine(NULL, "その絡みもあって、結局、誰も文句が言えず放置されてきたってのが実際のようです。」",
+		   NULL," Из-за него-то никто не возражал и не лез в дело.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1006", 128, TRUE);
+	OutputLine(NULL, "「……まぁでもなぁ！",
+		   NULL," ......Но вот знаете что!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1007", 128, TRUE);
+	OutputLine(NULL, "　某大先生は女癖が悪かったから、それもあったのかもしれませんなぁ、わっははははははは！」",
+		   NULL," Тот глубокоуважаемый кое-кто был падок на женщин — как знать, может, здесь-то и зарыта собака, уах-ха-ха-ха-ха-ха-ха-ха!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が小泉のおじいちゃんを体を使って籠絡したとでも言いたいのか。",
+		   NULL,"Он намекает, что я добилась расположения дедушки Коидзуми своим телом?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私たち二人に対する侮辱も同然だった。",
+		   NULL,"...Да он же оскорбляет нас обоих.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だが、それをぐっと堪える。",
+		   NULL,"......Но я стерплю.", Line_WaitForInput);
+	OutputLine(NULL, "この程度のことで表情に出してはいけない。",
+		   NULL," Нельзя давать волю чувствам из-за подобной малости.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/tk_ryou1", "maskup", 1, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1056", 128, TRUE);
+	OutputLine(NULL, "「……それで本日は、当機関の研究内容について説明させていただき、当機関に対する理事会の決定について、どうかご再考をお願いしたいと思いまして、お時間を頂戴させていただきました。",
+		   NULL,"\"......Так вот, сегодня мне хотелось бы разъяснить суть исследования нашего института в надежде на пересмотр советом директоров решения, принятого касательно нашего института.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1057", 128, TRUE);
+	OutputLine(NULL, "本日はこのような場へご多忙な中、お越しいただきましたことを深く御礼申し上げます…。」",
+		   NULL," Выражаю глубокую признательность за то, что нашли время на посещение сего места...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1024", 128, TRUE);
+	OutputLine(NULL, "「まぁ、タダでウニが出て来るわけはないってことですな！",
+		   NULL,"\"Ну что ж, просто так морскими ежами, видать, не кормят!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1025", 128, TRUE);
+	OutputLine(NULL, "　わっはははははは！」",
+		   NULL," Уах-ха-ха-ха-ха-ха-ха!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は、雛見沢症候群の存在が、どれだけ重要な意味を持つかを性急にならないよう注意しながら説明した。",
+		   NULL,"Я рассказала о поистине неоценимом значении синдрома Хинамидзавы, следя за собой, чтобы не торопиться.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢症候群のポテンシャルは、軍事転用などという瑣末なレベルに囚われず、もっともっと重要な意味を持つということ。",
+		   NULL,"О том, что возможности синдрома не ограничиваются приземлённым военным применением, но несут куда более важное значение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…イデオロギーや宗教などすらも説明しかねないこと。",
+		   NULL,"О том, что его исследование может объяснить даже мировоззрения, вероисповедания.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそもの人類の定義すらも揺るがしかねないということを。",
+		   NULL,"Что ему под силу пошатнуть само определение человечества.", Line_WaitForInput);
+	OutputLine(NULL, "時間をかけてゆっくりと説明した。",
+		   NULL," Я рассказывала долго, не торопясь.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それらの全てが、この品のない男たちに伝わった自信はないが、理解してくれるならば何割でも構わない。",
+		   NULL,"Не уверена, всё ли дошло до этих неотёсанных мужланов, но мне хватит, если они поймут хоть отчасти.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…雛見沢症候群がどれだけ偉大な発見なのかが理解してもらえればいいのだ…。",
+		   NULL,"Лишь бы поняли, насколько великая находка — синдром Хинамидзавы...", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 0, 2000, FALSE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "background/tk_ryou1", "maskleft", 1, 0, 300 );
+
+	PlayBGM( 1, "yorumushi", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1026", 128, TRUE);
+	OutputLine(NULL, "「ありがとう三佐。",
+		   NULL,"\"Благодарю, майор.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1027", 128, TRUE);
+	OutputLine(NULL, "…………ふぅむ、なるほど。",
+		   NULL," .........Хммм, понятненько.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1028", 128, TRUE);
+	OutputLine(NULL, "……ふぅむ。」",
+		   NULL," ...Хм-м...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1008", 128, TRUE);
+	OutputLine(NULL, "「ちょっと検討をしたいので、三佐には一度下がってもらってよろしいですかな？」",
+		   NULL,"\"Мы хотели бы немного потолковать меж собой. Не могли бы вы нас оставить, майор?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1058", 128, TRUE);
+	OutputLine(NULL, "「…はい。",
+		   NULL,"\"...Хорошо.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1059", 128, TRUE);
+	OutputLine(NULL, "それでは失礼させていただきます。」",
+		   NULL," Что же, с вашего позволения покину вас.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　当事者の前では議論できないのは当然だろう。",
+		   NULL,"Естественно, при заинтересованном лице обсуждать нельзя.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…資料は全て預けた。",
+		   NULL,"Все бумаги оставила с ними.", Line_WaitForInput);
+	OutputLine(NULL, "後は彼らがそれを好意的に汲み取ってくれることを期待するだけだ。",
+		   NULL," Остаётся надеяться, что их поймут как надо.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は退室して襖を閉めた。",
+		   NULL,"Выйдя из комнаты, я задвинула за собой дверь.", Line_WaitForInput);
+	OutputLine(NULL, "……隣に控え用の部屋を取ってあるのでそちらへ行く。",
+		   NULL," ......И пошла было в соседнюю, забронированную про запас.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　が、…足を止める。",
+		   NULL,"Но... остановила шаг.", Line_WaitForInput);
+	OutputLine(NULL, "……本当はマナー違反なのだが、襖越しにそっと耳を澄ました…。",
+		   NULL," ......Так, вообще-то, нельзя поступать, но я прислушалась к разговору, доносившемуся из-за двери...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1029", 128, TRUE);
+	OutputLine(NULL, "「こりゃあ…、わはははは、何と言いますか。",
+		   NULL,"\"Да-а... уа-ха-ха-ха-ха, даже не знаю, что и сказать.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1030", 128, TRUE);
+	OutputLine(NULL, "前理事の皆さんも気の毒としか言い様がありませんなぁ。」",
+		   NULL," Тут можно разве что посочувствовать старым директорам.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 0, "T1_Requiem", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1012", 128, TRUE);
+	OutputLine(NULL, "「…いや、はははは。",
+		   NULL,"\"...Ну, ха-ха-ха-ха,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1013", 128, TRUE);
+	OutputLine(NULL, "小泉先生がですね、非常に強く推されていまして…。」",
+		   NULL," Коидзуми-сэнсэй, понимаете, очень настаивал...\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1009", 128, TRUE);
+	OutputLine(NULL, "「小泉先生には、××製薬の初代顧問に就任された時に一度お会いし、とても聡明な方だなぁという印象を強く持っていたのですが、",
+		   NULL,"\"Я разок встречался с Коидзуми-сэнсэем при назначении первым советником фармацевтической компании XX, и тот произвёл впечатление крайне разумного человека, но...", Line_Continue);
+	OutputLine(NULL, "……ん〜。」",
+		   NULL,"... хмммм...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1006", 128, TRUE);
+	OutputLine(NULL, "「人間、歳には勝てないということですな！",
+		   NULL,"\"Да уж, против старения не попрёшь!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1007", 128, TRUE);
+	OutputLine(NULL, "　人間、引き際が肝心だと思い知らされますよ。」",
+		   NULL," Лишнее напоминание, что нужно чётко знать, когда пора отойти от дел.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1014", 128, TRUE);
+	OutputLine(NULL, "「ただですね、雛見沢症候群という非常に珍しい病気があるのは事実でございまして。",
+		   NULL,"\"Но ведь редчайшая болезнь под названием «Хинамидзавский синдром» действительно существует.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1015", 128, TRUE);
+	OutputLine(NULL, "決して全てが全て妄想というわけではありませんでして…。」",
+		   NULL," Отнюдь не всё тут сплошные бредни...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1010", 128, TRUE);
+	OutputLine(NULL, "「入江機関はすでに病気の解明と治療薬の開発に成功しているというじゃありませんか。",
+		   NULL,"\"Вроде бы Институт Ириэ уже раскрыл суть синдрома и преуспел в создании лекарства?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1011", 128, TRUE);
+	OutputLine(NULL, "それで充分ですよ。」",
+		   NULL," Того вполне достаточно.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1008", 128, TRUE);
+	OutputLine(NULL, "「現代日本にとって、周辺諸国を過敏にさせる件については厳に慎むべきです。",
+		   NULL,"\"Современной Японии нужно держаться подальше от вопросов, способных взбудоражить соседние страны.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1009", 128, TRUE);
+	OutputLine(NULL, "中でも軍事分野はもっとも敏感と言えるでしょう。",
+		   NULL," Среди них, полагаю, наиболее щекотливы дела военного характера.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1010", 128, TRUE);
+	OutputLine(NULL, "少なくとも、数年間にわたり軍事目的の研究がされていた事実は直ちに抹消しなくてはなりません。」",
+		   NULL," Необходимо по крайней мере немедленно разделаться с тем обстоятельством, что у нас несколько лет проводилось исследование в военных целях.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>中川</color>", NULL, "<color=#f5e6d3>Накагава</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_nakagawa1016", 128, TRUE);
+	OutputLine(NULL, "「それは軍事研究の中止とは別に？」",
+		   NULL,"\"Это помимо прекращения работ над военным применением?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1011", 128, TRUE);
+	OutputLine(NULL, "「そうです。",
+		   NULL,"\"В точку.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1012", 128, TRUE);
+	OutputLine(NULL, "雛見沢症候群は生物兵器開発のための研究という事実は、直ちに研究を中止したとしても残ります。",
+		   NULL," То, что работы над синдромом Хинамидзавы направлены на разработку биологического оружия - это факт, и он не изменится, даже прекрати мы их тотчас.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1013", 128, TRUE);
+	OutputLine(NULL, "雛見沢症候群を、目的は何であれ研究した事実は厳重に隠蔽されなければなりません。",
+		   NULL," Необходимо строжайшим образом скрыть правду о том, ради чего велось исследование.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1014", 128, TRUE);
+	OutputLine(NULL, "…できれば、雛見沢症候群そのものがなくなってしまうのが好ましい。」",
+		   NULL," Предпочтительно, если возможно, чтобы сам синдром канул в небытие.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1012", 128, TRUE);
+	OutputLine(NULL, "「ですな。",
+		   NULL,"\"И верно.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1013", 128, TRUE);
+	OutputLine(NULL, "病気が残れば、やがては関心を持つものが現れ、せっかく埋めた穴をわざわざ掘り返す輩が現れないとも限りません。",
+		   NULL," Если болезнь останется, рано или поздно появятся любопытные, и нельзя поручиться, что кто-то не раскопает яму.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1014", 128, TRUE);
+	OutputLine(NULL, "理事会の決定通り、入江機関は病気を撲滅させ次第、研究の痕跡を全て消した上で解散させるのが良いでしょう。」",
+		   NULL," Полагаю, лучше не отступать от решения, принятого советом, и, как только Институт Ириэ разделается с болезнью, распустить его после зачистки всех следов проводившихся там работ.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1031", 128, TRUE);
+	OutputLine(NULL, "「ふむ。",
+		   NULL,"\"Гм.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1032", 128, TRUE);
+	OutputLine(NULL, "やはりそういう結論に行き着きますな。",
+		   NULL," Значит, на том и остановимся.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1033", 128, TRUE);
+	OutputLine(NULL, "ノーベル賞が取れるかどうかが問題ではなく、戦後日本にとって無用な研究だということです。」",
+		   NULL," Вопрос получения Нобелевской премии тут не стоит — современной Японии такое исследование ни к чему.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1034", 128, TRUE);
+	OutputLine(NULL, "「そもそも、大昔から存在し、特に異常もなくやってこれたわけでしょう。",
+		   NULL,"\"Да и вообще, болезнь же существует с давних пор, но никаких особенных проблем она не создавала.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1035", 128, TRUE);
+	OutputLine(NULL, "藪を突っつく研究なのではと当初から思っていました。」",
+		   NULL," Всегда считал, что исследование зазря ворошит кусты.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1015", 128, TRUE);
+	OutputLine(NULL, "「同感ですな。",
+		   NULL,"\"Соглашусь.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1016", 128, TRUE);
+	OutputLine(NULL, "雛見沢症候群という病気の存在自体は疑わないが、",
+		   NULL," В существовании-то синдрома Хинамидзавы не сомневаюсь...", Line_Continue);
+	OutputLine(NULL, "……この、高野という第一発見者は、少々この病気を脚色し過ぎですな！」",
+		   NULL," но этот его первооткрыватель, Такано, немножечко сгущает краски насчёт его значения!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1017", 128, TRUE);
+	OutputLine(NULL, "「私も資料を読みながら、ユニークな発想をする人だなぁと思っておりました。",
+		   NULL,"\"Мне при прочтении статей тоже думалось: ну и своеобразное же мышление у человека.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1018", 128, TRUE);
+	OutputLine(NULL, "第一、寄生虫で人の思想が染まるなんて、聞いたことがない。",
+		   NULL," Во-первых, я не слыхал ещё о паразитах, влияющих на людские идеи.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1019", 128, TRUE);
+	OutputLine(NULL, "そりゃいくらなんでも、酷すぎる。」",
+		   NULL," Что ни говори, а это уж чересчур.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「宗教もそれで説明できるなら、お釈迦様もキリストもみんなその、何でしたっけ、女王感染者ということになってしまう。",
+		   NULL,"\"Если этим вот объяснить веру, выходит, и Будда, и Христос, все они — как там? — носители королевы паразитов.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんなこと世界に発表したら、世界中からとんでもないバッシングに曝される。」",
+		   NULL," Попробуй заявить миру подобное — да на нас весь мир накинется.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「今時の宗教は怖いですからなぁ。",
+		   NULL,"\"Да, с верой нынче шутки шутить себе дороже.", Line_WaitForInput);
+	OutputLine(NULL, "わっはっはっは。」",
+		   NULL," Уа-ха-ха-ха.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1015", 128, TRUE);
+	OutputLine(NULL, "「動物の脳に寄生する寄生虫がいるなら、たまには人間の脳に寄生する寄生虫がいてもいいとは思う。",
+		   NULL,"\"Думаю, раз у животных в мозгах встречаются паразиты, почему бы не быть паразитам, паразитирующим на людских мозгах?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1016", 128, TRUE);
+	OutputLine(NULL, "しかし、その寄生虫が思想や人格までもコントロールする可能性なんてのは、わっははははは！",
+		   NULL," Но вот предполагать, что те управляют идеями, личными качествами, — уах-ха-ха-ха-ха-ха!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1017", 128, TRUE);
+	OutputLine(NULL, "　さすがにこりゃちょっとユニーク過ぎます。」",
+		   NULL," Оно и впрямь как-то уж чересчур своеобразно.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……襖の隙間からそれを覗いていた私は、……不思議な既視感に囚われていた。",
+		   NULL,"......Меня, подглядывавшую в дверную щель...... захватило странное ощущение уже виденного.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　初めて経験することのはずなのに、…初めてじゃない気がする。",
+		   NULL,"По идее, такое со мной впервые... но кажется, словно разговор этот я слышала раньше.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　よくわからないけれど、その思い出はとても悲しくて、",
+		   NULL,"Не понимаю, в чём дело, но печальна же", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "苦々しくて、",
+		   NULL," и неприятна память о нём......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……あれ、",
+		   NULL," э...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………あれあれ…？",
+		   NULL,"......... э-э-э?..", Line_WaitForInput);
+	OutputLine(NULL, "　なんで、……涙が……。",
+		   NULL," Почему...... слёзы......", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　気付けば、…襖の向こうはいつの間にか畳みの部屋じゃなく、",
+		   NULL,"Смотрю — а за дверью уже не комната, устеленная татами...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……とてもとても懐かしい絨毯の部屋に。",
+		   NULL,"... а такая памятная, давным-давно не виденная, с ковром на полу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　埃の臭いと、何かの薬品の揮発した臭いの混じった、へんてこだけど、とても居心地のいいあの空気が漏れ出してくるあの部屋に。",
+		   NULL,"Из неё доносился запах пыли, смешавшийся с испарениями неведомых препаратов, и — странное дело — от него становилось очень уютно.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/flashback/xta1", "maskc", 1, 0, 1300 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そこには、…………本当に懐かしい祖父の姿が。",
+		   NULL,"А в ней......... стоял дед, которого я не видела так давно.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　心を込めて書いた論文を扱き下ろされ、…涙を見せることも許されなかった、祖父の姿が。",
+		   NULL,"Бумаги, в которые он влил свою душу, разгромлены в пух и прах, а дед и слезы проронить не может.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは幻なんかじゃない。",
+		   NULL,"То никакое не наваждение.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……だって、今日、彼らに託した資料の中には、祖父が書いた論文の引用がたくさん含まれている。",
+		   NULL,"......Ведь в документах, оставленных с ними сегодня, полно выдержек из написанных дедом статей.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だから、そこに祖父がいて、彼らに説明してくれていたとしても何の不思議もなかった。",
+		   NULL,"И ничего удивительного, коль дед стоял в комнате и вёл объяснение.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そして私は、祖父の懐かしい姿に涙すると共に、",
+		   NULL,"И, плача при виде дорогого мне дедушки......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……その偉業を蔑み、馬鹿にする彼らの悲しき悪口雑言を目にした…。",
+		   NULL," я смотрела, как они оскорбляют и высмеивают его великий труд...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　確かに一度あった光景。",
+		   NULL,"Да, я видела эту сцену прежде.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして一度で終わった光景のはず…。",
+		   NULL,"И она должна была остаться в прошлом...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なのに、なぜか同じ光景が再び目の前で繰り返されていて…。",
+		   NULL,"Почему же она снова предстаёт передо мной?..", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は現実と幻が重なり合う、その奇妙な世界を襖越しに覗き、呆然としているしかない。",
+		   NULL,"Мне оставалось лишь, застыв, пялиться в дверную щель на диковинный мир, объединивший действительность и наваждение.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/flashback/xta2", 1000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1036", 128, TRUE);
+	OutputLine(NULL, "「あの三佐もちょいとおかしいし、",
+		   NULL,"\"Та майорша тоже малость чудная,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1037", 128, TRUE);
+	OutputLine(NULL, "こんな世迷言を信じた小泉先生もおかしいが、…",
+		   NULL," да и Коидзуми-сэнсэй, поверивший в подобную чушь, чудаковат...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1038", 128, TRUE);
+	OutputLine(NULL, "やはりこの第一発見者の論文が一番おかしいですな。」",
+		   NULL," но дурнее всего статьи этого первооткрывателя.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1020", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「期待と妄想が入り混じっていて、これは論文というより創作の次元ですな。",
+		   NULL,"\"В них перемешались надежды и заблуждения — они скорее относятся к художественной прозе, нежели к научным работам.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1021", 128, TRUE);
+	OutputLine(NULL, "というか、これはこのままどこかの出版社に持ち込んで本にした方が受けると思いますよ。」",
+		   NULL," Знаете, они будут лучше выглядеть, если прямо вот в таком виде отнести какому издателю да выпустить в качестве развлекательной книги.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1039", 128, TRUE);
+	OutputLine(NULL, "「確かに確かに！",
+		   NULL,"\"Вот-вот!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1040", 128, TRUE);
+	OutputLine(NULL, "　私の友人に出版社の社長やってるのが居てね。",
+		   NULL," Я вожу дружбу с директором одного издательства.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1041", 128, TRUE);
+	OutputLine(NULL, "きっと面白がって読んでくれると思いますよ。",
+		   NULL," Уверен, ему понравится.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1042", 128, TRUE);
+	OutputLine(NULL, "わはははははは！」",
+		   NULL," Уа-ха-ха-ха-ха-ха-ха!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1018", 128, TRUE);
+	OutputLine(NULL, "「笑い事ではありませんぞ、皆様方。",
+		   NULL,"\"Смеяться тут не над чем, уважаемые.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1019", 128, TRUE);
+	OutputLine(NULL, "このとんでもない研究がまかり通って、巨額の予算が数年間にもわたって投じられていたのですからな。",
+		   NULL," На эту ерунду за несколько лет ушло невообразимое количество денег.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1020", 128, TRUE);
+	OutputLine(NULL, "…特に酷いのは、ハザード時に村をガス殺するための装備を用意した、という点です。",
+		   NULL," А хуже всего снаряжение, приготовленное для удушения газом деревни в случае опасности.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1021", 128, TRUE);
+	OutputLine(NULL, "これは絶対に国民に知られてはならないことです。」",
+		   NULL," Общественность никоим образом не должна узнать о том.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1043", 128, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「計画が存在しただけでも恐ろしいのに、実際に実行可能な装備が準備されているというのは国外は愚か、国内世論も敵に回すことになるだろうねぇ！",
+		   NULL,"\"Страшно, что такой план вообще существует, а уж то, что его готовы осуществить, обернёт против нас не только другие страны, но и наших же граждан!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1044", 128, TRUE);
+	OutputLine(NULL, "　しかも、そのガス殺のための装備の維持費がすごいことになってるじゃないか…！」",
+		   NULL," К тому же поддержание нужного снаряжения в рабочем состоянии наверняка стоит чудовищных денег!..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1022", 128, TRUE);
+	OutputLine(NULL, "「そんなの、本当に維持費にしてるわけないじゃないですか。",
+		   NULL,"\"Да едва ли за ним кто-то следит.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1023", 128, TRUE);
+	OutputLine(NULL, "そういう名目にしてトンネルしてる架空プロジェクトでしょ、どうせ。",
+		   NULL," Проект, скорее всего, существует лишь на бумаге, чтобы вытягивать из казны деньги.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1022", 128, TRUE);
+	OutputLine(NULL, "大体、何でしたっけ？",
+		   NULL," Да вообще, как там говорится?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigic1023", 128, TRUE);
+	OutputLine(NULL, "　少女が１人死ぬだけで村人が一斉に発狂する病気なんてあなた、どこの漫画の話ですか。」",
+		   NULL," Смерть одной-единственной девочки разом сведёт с ума всю деревню? Это из какой манги выдернуто?\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1024", 128, TRUE);
+	OutputLine(NULL, "「まったくまったく！",
+		   NULL,"\"Да-да, в точку!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1025", 128, TRUE);
+	OutputLine(NULL, "　こんな子供騙しを鵜呑みにして巨額の予算を垂れ流すとは、つくづくイカンと思いますなぁ！",
+		   NULL," Поверить какой-то сказке для детишек и выпускать из рук огромные суммы — идиотизм, по-моему!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigib1026", 128, TRUE);
+	OutputLine(NULL, "　こんな資料を真に受ける連中がいるというんだから、実に馬鹿馬鹿しいことです！」",
+		   NULL," Уму непостижимо, что нашлись те, кто принял эти бумажонки за чистую монету!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう言いながら、大袈裟なジェスチャーをしながら乱暴に資料を置く。",
+		   NULL,"С такими словами он картинно, размашисто положил документы на стол.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……置いたというよりは、叩き付けたというのが正解かもしれない。",
+		   NULL,"......Пожалуй, точнее сказать — швырнул.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だって、資料の束が綺麗に置かれず、周りに舞うように散ったから。",
+		   NULL,"Потому как они, не удержавшись на столе, разлетелись по полу, будто в танце.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1045", 128, TRUE);
+	OutputLine(NULL, "「ですよなぁ、わははははは！",
+		   NULL,"\"Правда ваша, уа-ха-ха-ха-ха-ха!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1046", 128, TRUE);
+	OutputLine(NULL, "　あ、ちょいと失礼。",
+		   NULL," Ах, извиняюсь,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1047", 128, TRUE);
+	OutputLine(NULL, "お手洗いに！」",
+		   NULL," надо в уборную отлучиться!\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "suzu", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう言って立ち上がった男が、",
+		   NULL,"Один из них встал......", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ぐしゃりと、",
+		   NULL," и наступил", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "それを踏む。",
+		   NULL," на бумаги.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それは、畳の上の資料ではなく、",
+		   NULL,"То не бумаги рассыпаны по татами...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………絨毯の上の、祖父の論文だった。",
+		   NULL,"...... а дедовы статьи по ковру.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そこには……、胸が張り裂けんばかりの悲しみで満たされた祖父がいた。",
+		   NULL,"Там...... стоял дед, переполненный горем, едва не разрывающим грудь.", Line_WaitForInput);
+	OutputLine(NULL, "なのに、それを表情に出せない祖父がいた。",
+		   NULL," Стоял дед, не имеющий права выразить своё горе.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祖父の表情は、変わったようには見えなかった。",
+		   NULL,"Выражение на лице деда не изменилось.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……でも、…私には歪んで見えた。祖父の背負う書斎の壁が、ぐにゃりと悲しく歪むのが確かに見えた。",
+		   NULL,"......Однако... я увидела, как то искажается. Точно увидела, как стена за его спиной печально кривится.", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 400, FALSE );
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "Typewriter", 120, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1060", 128, TRUE);
+	OutputLine(NULL, "「……………………ッ！！！」",
+		   NULL,"\"........................Кх!!!\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は飛び出していた。",
+		   NULL,"Я кинулась на пол.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そして老紳士の足に組み付く。彼が憎いんじゃない。",
+		   NULL,"...И вцепилась в ногу одного из гостей. Не то чтобы он был ненавистен мне.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いや、憎いか憎くないかと言われたらもちろん憎いのだが…、そんなことじゃない、そんなことじゃない。",
+		   NULL,"Хотя нет, если бы спросили, ненавижу ли я его, конечно, я б согласилась... но дело не в этом, не в этом.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祖父の論文を踏みつける足が許せなかったのだ。",
+		   NULL,"Я не могла смириться с его ногой, топчущей статью деда.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1061", 128, TRUE);
+	OutputLine(NULL, "「踏まないで…！！",
+		   NULL,"\"Не топчи!!...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1062", 128, TRUE);
+	OutputLine(NULL, "　踏まないで…ッ！！",
+		   NULL," Не топчи!!...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1063", 128, TRUE);
+	OutputLine(NULL, "　おじいちゃんが頑張って書いたんだから、…足で踏んだりしないで…ッ！！」",
+		   NULL," Дедушка старался, писал — не топчи!!...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>代議士</color>", NULL, "<color=#f5e6d3>Конгрессмен</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk1_daigia1048", 128, TRUE);
+	OutputLine(NULL, "「……っと、……ぅわ、……失礼………。」",
+		   NULL,"\"......Э...... ух...... извин.........\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は未だ踏みにじり続ける、その足を、散らばった紙面から退かしたかった。",
+		   NULL,"Нога всё так же стояла на бумаге — я хотела её убрать.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…でも、それは根が生えたように頑丈で、私ごときが押したり引いたりするだけでは決して退こうとはしなかった。",
+		   NULL,"Только та словно бы приросла к полу корнями — мои тщедушные попытки столкнуть или оттянуть её пропадали впустую.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからその足にしがみ付いて、懇願した。",
+		   NULL,"И я умоляла, вцепившись в ногу.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　足の裏から踏まれた論文を引き抜こうとして引っ張った。",
+		   NULL,"Тянула бумаги, стараясь вытащить их из-под ноги.", Line_WaitForInput);
+	OutputLine(NULL, "でも、足が退かせない、論文が引き抜けない…。",
+		   NULL," Однако нога не поддавалась, а бумаги никак не вытаскивались...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1064", 128, TRUE);
+	OutputLine(NULL, "「踏まないでぇ……、",
+		   NULL,"\"Не топчи......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1700 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "踏まないでぇえぇ……。",
+		   NULL," не топчи-и-и......", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk1_takano1065", 128, TRUE);
+	OutputLine(NULL, "おじいちゃんのを、",
+		   NULL," Не...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 600 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ふ、",
+		   NULL," не топчи...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…踏まないでぇえぇぇぇ…ぇ………。」",
+		   NULL," дедушкины-ы-ы-ы-ы... ыкх.........\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　シンと静まり返った部屋には、私のすすり泣く声だけが響き渡っていた。",
+		   NULL,"Только мои всхлипывания раздавались в затихшей комнате...", Line_WaitForInput);
+	OutputLine(NULL, "…あの時と同じに…。",
+		   NULL," Точь-в-точь как тогда...", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+}

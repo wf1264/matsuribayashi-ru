@@ -1,0 +1,85 @@
+void main()
+{
+	DrawScene( "black", 400 );
+
+	PlayBGM( 0, "it_moves", 120, 0 );
+
+	DrawScene( "background/fure2", 1000 );
+//	DrawFragment("minacubemap", "FragmentGroup", 1000);
+	DrawScene( "background/kakera", 400 );
+	StopFragment(1000);
+	DrawScene( "white", 1000 );
+	DrawScene( "background/so2", 1000 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このゲーム盤の上では、何が起ころうとも全て祟りやら、園崎家の暗躍やらで片付けられてしまうことを思い知らせるカケラ。",
+		   NULL,"А вот фрагмент, показывающий: что бы ни произошло на игровой доске, всё списывают на происки семьи Сонодзаки либо проклятие.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いえ、もう少し私風に言うならば、ルールＺの存在を気付かせてくれるカケラなのかしら。",
+		   NULL,"Нет, если сказать чуть более на мой лад — фрагмент, пожалуй, показывающий Правило Зет.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "background/mati_o6", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラでは気付きにくいことだけど。",
+		   NULL,"Что, впрочем, трудно заметить лишь по нему одному,", Line_WaitForInput);
+	OutputLine(NULL, "…ルールＸに囚われた園崎詩音が、ルールＹに勘違いして翻弄されながら、",
+		   NULL," в этом запутанном фрагменте Сонодзаки Шион, попавшаяся Правилу Икс и введённая в заблуждение Правилом Игрек,", Line_WaitForInput);
+	OutputLine(NULL, "ルールＺの存在に気付いていくややこしいカケラ。",
+		   NULL," осознаёт существование Правила Зет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、ゲーム盤の法則を全て教えてもくれる重要なカケラでもある。",
+		   NULL,"Но сей фрагмент, помимо того, показывает все законы, действующие на игровом поле.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+	ModSetLayerFilter(0, 256, "none");
+	ModDrawCharacterWithFiltering(0, 6, "sprite/si1a_def_a1_", "0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…そう言えば、園崎詩音という駒も、ゲーム盤の見地からは、外から来た駒という扱いになるのかもしれない。",
+		   NULL,"...Кстати говоря, Сонодзаки Шион можно, наверное, счесть фигурой со стороны, глядя с точки зрения игры.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　始めは北条沙都子を毛嫌いしていた彼女も、…このカケラともうひとつのカケラを経て大切な何かを学び取り、",
+		   NULL,"Она, поначалу не любившая Ходзё Сатоко, пройдя через этот и ещё один фрагмент, выучила кое-что важное", Line_WaitForInput);
+	OutputLine(NULL, "ルールＸに抗え、ルールＺと戦うための強力な駒に成長する。",
+		   NULL," и превратилась в сильную фигуру для сопротивления Правилу Икс и ведения боя с Правилом Зет.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このカケラがとにかく滑稽なのは、……それがとても狡猾に隠されていて、ぱっと見ただけでは、まるでそう見えないことなのだけれど。",
+		   NULL,"Что, надо сказать, забавно в данном фрагменте... то, что главное скрыто довольно-таки хитроумно и при беглом взгляде можно вовсе того не заметить.", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　学べよ学べ、過ちを。",
+		   NULL,"Учись, учись на своих ошибках.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そしてどうか、強力な駒となって敵に打ち勝つ力を貸しておくれ…。",
+		   NULL,"И, прошу тебя, превратись в сильную фигуру, что поможет преодолеть врага...", Line_Normal);
+	ClearMessage();
+
+	CallScript( "&eye" );
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene( "black", 1000 );
+
+}
